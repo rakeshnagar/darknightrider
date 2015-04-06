@@ -1,2 +1,2 @@
-/data
-mongod-start
+.idea
+node_modules

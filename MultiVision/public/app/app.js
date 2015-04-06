@@ -1,0 +1,23 @@
+angular.module('app', ['ngResource', 'ngRoute']);
+
+angular.module('app').config(function($routeProvider, $locationProvider) {
+    console.log('in app.js');
+    console.log('$routeProvider = ' + $routeProvider);
+    console.log('$locationProvider = ' + $locationProvider);
+    //$locationProvider.html5Mode(true);
+
+    // Added to fix "$location in HTML5 mode requires a <base> tag to be present" error
+    //https://docs.angularjs.org/error/$location/nobase
+
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
+
+    $routeProvider.when('/', { templateUrl: '/partials/main', controller: 'mainCtrl'})
+});
+
+angular.module('app').controller('mainCtrl', function($scope) {
+    console.log('in app.js - mainCtrl');
+    $scope.myVar = "Hello Angular";
+});
