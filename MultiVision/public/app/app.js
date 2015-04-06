@@ -14,10 +14,6 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
         requireBase: false
     });
 
-    $routeProvider.when('/', { templateUrl: '/partials/main', controller: 'mainCtrl'})
+    $routeProvider.when('/', { templateUrl: '/partials/main', controller: 'mvMainCtrl'})
 });
 
-angular.module('app').controller('mainCtrl', function($scope) {
-    console.log('in app.js - mainCtrl');
-    $scope.myVar = "Hello Angular";
-});

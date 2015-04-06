@@ -1,2 +1,10 @@
-h1 This is a Partial
-h2 {{ myVar }}
+.container
+    .jumbotron
+        h1 MultiVision
+        p Welcome to the Jade templating engine. Jade is designed primarily for server side templating in node.js, however it can be used in many other environments. It is only intended to produce XML like documents (HTML, RSS etc.) so don't use it to create plain text/markdown/CSS/whatever documents.
+
+    .row
+        .col-md-6
+            div(ng-include="'/partials/featured-courses'")
+        .col-md-6
+            div(ng-include="'/partials/new-courses'")
