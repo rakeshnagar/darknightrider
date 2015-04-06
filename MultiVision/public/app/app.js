@@ -14,6 +14,6 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
         requireBase: false
     });
 
-    $routeProvider.when('/', { templateUrl: '/partials/main', controller: 'mvMainCtrl'})
+    $routeProvider.when('/', { templateUrl: '/partials/main/main', controller: 'mvMainCtrl'})
 });
 

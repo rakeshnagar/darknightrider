@@ -43,9 +43,9 @@ Message.findOne().exec(function (err, messageDoc) {
 });
 */
 
-app.get('/partials/:partialPath', function (req, res) {
-    console.log('res.render partials = ' + req.params.partialPath);
-    res.render('partials/' + req.params.partialPath);
+app.get('/partials/*', function (req, res) {
+    //console.log('res.render partials = ' + req.params.partialPath);
+    res.render('../../public/app/' + req.params[0]);
 });
 
 /*
