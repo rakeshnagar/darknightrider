@@ -22,7 +22,7 @@ passport.use(new LocalStrategy(
 
             User.findOne({username: username}).exec(function (err, user) {
                 console.log('User=' + user);
-                if (user) {
+                if (user && user.authenticate(password)) {
                     return done(null, user);
                 } else {
                     return done(null, false);
