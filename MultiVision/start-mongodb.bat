@@ -1,0 +1,1 @@
+mongod --dbpath C:\X-DRIVE\Enrichments\Projects\Incubation\WebstormProjects\darknightrider\MultiVision\mongo-data
