@@ -15,7 +15,8 @@ module.exports = function (config) {
         lastName: String,
         username: String,
         salt: String,
-        hashed_pwd: String
+        hashed_pwd: String,
+        roles: [String]
     });
 
     userSchema.methods = {
@@ -29,11 +30,32 @@ module.exports = function (config) {
     User.find({}).exec(function (err, collection) {
         if (collection.length === 0) {
             var salt, hash, username;
+
             username = 'rakesh';
             salt = createSalt();
             hash = hashPwd(salt, username);
 
-            User.create({firstName: 'Rakesh', lastName: 'Nagar', username: username, salt: salt, hashed_pwd: hash});
+            User.create({
+                firstName: 'Rakesh',
+                lastName: 'Nagar',
+                username: username,
+                salt: salt,
+                hashed_pwd: hash,
+                roles: ['admin']
+            });
+
+            username = 'joe';
+            salt = createSalt();
+            hash = hashPwd(salt, username);
+
+            User.create({
+                firstName: 'Joe',
+                lastName: 'Traders',
+                username: username,
+                salt: salt,
+                hashed_pwd: hash,
+                roles: []
+            });
         }
     });
 

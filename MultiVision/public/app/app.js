@@ -1,6 +1,6 @@
 angular.module('app', ['ngResource', 'ngRoute']);
 
-angular.module('app').config(function($routeProvider, $locationProvider) {
+angular.module('app').config(function ($routeProvider, $locationProvider) {
     console.log('in app.js');
     console.log('$routeProvider = ' + $routeProvider);
     console.log('$locationProvider = ' + $locationProvider);
@@ -14,6 +14,7 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
         requireBase: false
     });
 
-    $routeProvider.when('/', { templateUrl: '/partials/main/main', controller: 'mvMainCtrl'})
+    $routeProvider.when('/', {templateUrl: '/partials/main/main', controller: 'mvMainCtrl'});
+    $routeProvider.when('/admin/users', {templateUrl: '/partials/admin/user-list', controller: 'mvUserListCtrl'});
 });
 
