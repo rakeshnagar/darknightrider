@@ -9,7 +9,7 @@ angular.module('app').factory('mvAuth', function ($http, mvIdentity, $q, mvUser)
                     var user = new mvUser();
                     angular.extend(user, response.data.user);
 
-                    mvIdentity.currentUser = response.data.user;
+                    mvIdentity.currentUser = user;
                     //mvNotifier.notify('You have successfully signed in!!');
                     console.log('login successful...');
                     dfd.resolve(true);

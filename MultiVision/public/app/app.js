@@ -14,7 +14,7 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
         requireBase: false
     });
 
-    $routeProvider.when('/', {templateUrl: '/partials/main/main', controller: 'mvMainCtrl'});
-    $routeProvider.when('/admin/users', {templateUrl: '/partials/admin/user-list', controller: 'mvUserListCtrl'});
+    $routeProvider.when('/', {templateUrl: '/partials/main/main', controller: 'mvMainCtrl'})
+    .when('/admin/users', {templateUrl: '/partials/admin/user-list', controller: 'mvUserListCtrl'});
 });
 
