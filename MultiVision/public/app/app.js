@@ -1,6 +1,15 @@
 angular.module('app', ['ngResource', 'ngRoute']);
 
 angular.module('app').config(function ($routeProvider, $locationProvider) {
+    var routeRoleChecks = {
+        admin: {
+            /* only allow admin uses to access this link */
+            auth: function (mvAuth) {
+                return mvAuth.authorizeCurrentUserForRoute('admin');
+            }
+        }
+    };
+
     console.log('in app.js');
     console.log('$routeProvider = ' + $routeProvider);
     console.log('$locationProvider = ' + $locationProvider);
@@ -16,21 +25,11 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/', {templateUrl: '/partials/main/main', controller: 'mvMainCtrl'})
-        .when('/admin/users', {templateUrl: '/partials/admin/user-list',
-            controller: 'mvUserListCtrl',
-            resolve: {
-                /* only allow admin uses to access this link */
-                auth: function (mvIdentity, $q) {
-                    if (mvIdentity.currentUser && mvIdentity.currentUser.roles.indexOf('admin') > -1) {
-                        return true;
-                    } else {
-                        return $q.reject('not authorized');
-                    }
-                }
-            }
+        .when('/admin/users', {
+            templateUrl: '/partials/admin/user-list',
+            controller: 'mvUserListCtrl', resolve: routeRoleChecks.admin
         });
-})
-;
+});
 
 angular.module('app').run(function ($rootScope, $location) {
     $rootScope.$on('$routeChangeError', function (evt, current, previous, rejection) {

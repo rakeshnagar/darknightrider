@@ -10,3 +10,15 @@
         requireBase: false
     });
 
+
+2) Double exclaimation in JS !!
+http://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript
+
+3) npm vs bower?
+
+
+4) Deferred DFD?
+
+5) Promise?
+
+6) Queue $q?
