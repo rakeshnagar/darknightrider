@@ -1,3 +1,11 @@
+WebStrom Shortcuts
+- Search Everywhere with: double shift
+- Open a file by name with: Ctrl+Shift+N
+- Open Recent files with: Ctrl+E
+- Open Navigation Bar with: Alt+Home
+- Drag'n'Drop file(s) here from Explorer
+
+-----
 1) Added below code to fix the crash
 
     //$locationProvider.html5Mode(true);
@@ -14,7 +22,7 @@
 2) Double exclaimation in JS !!
 http://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javascript
 
-3) npm vs bower?
+3) npm vs bower?na
 
 
 4) Deferred DFD?
@@ -22,3 +30,6 @@ http://stackoverflow.com/questions/784929/what-is-the-not-not-operator-in-javasc
 5) Promise?
 
 6) Queue $q?
+
+AngularJS documentation
+https://docs.angularjs.org/api/ng/service/$q
