@@ -2,3 +2,5 @@
 mongod-start
 mongo-data
 .idea
+.idea/workspace.xml
+workspace.xml

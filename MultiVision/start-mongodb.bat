@@ -1,1 +1,2 @@
-mongod --dbpath C:\X-DRIVE\Enrichments\Projects\Incubation\WebstormProjects\darknightrider\MultiVision\mongo-data
+mkdir .\mongo-data
+mongod --dbpath .\mongo-data
