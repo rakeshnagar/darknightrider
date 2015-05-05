@@ -1,8 +1,8 @@
-angular.module('app').controller('mvMainCtrl', function ($scope, mvCourse) {
+angular.module('app').controller('mvMainCtrl', function ($scope, mvCachedCourse) {
     console.log('in app.js - mvMainCtrl');
     //$scope.myVar = "Hello Angular";
 
-    $scope.courses = mvCourse.query();
+    $scope.courses = mvCachedCourse.query();
 
     //$scope.courses = [
     //    {title: 'First Course', featured: true, published: new Date("October 13, 2013 11:13:00")},

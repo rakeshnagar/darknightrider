@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb56be5-ca87-4b5f-b710-5b733eb2be43" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/server/models/Course.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/public/app/courses/course-list.jade" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/server/controllers/courses.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/app.js" afterPath="$PROJECT_DIR$/MultiVision/public/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.html" afterPath="$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade" afterPath="$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/MultiVision/public/app/courses/mvCachedCourse.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/server/views/index.html" afterPath="$PROJECT_DIR$/MultiVision/server/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/server/views/index.jade" afterPath="$PROJECT_DIR$/MultiVision/server/views/index.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/server/config/mongoose.js" afterPath="$PROJECT_DIR$/MultiVision/server/config/mongoose.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js" afterPath="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js" afterPath="$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/main/new-courses.html" afterPath="$PROJECT_DIR$/MultiVision/public/app/main/new-courses.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/app/main/new-courses.jade" afterPath="$PROJECT_DIR$/MultiVision/public/app/main/new-courses.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/server/config/routes.js" afterPath="$PROJECT_DIR$/MultiVision/server/config/routes.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/server/includes/scripts.jade" afterPath="$PROJECT_DIR$/MultiVision/server/includes/scripts.jade" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/css/site.css" afterPath="$PROJECT_DIR$/MultiVision/public/css/site.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MultiVision/public/css/site.styl" afterPath="$PROJECT_DIR$/MultiVision/public/css/site.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="darknightrider.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,24 +27,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/app.js">
+      <file leaf-file-name="mvCourseListCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+              <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Course.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/server/models/Course.js">
+      <file leaf-file-name="mvCachedCourse.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCachedCourse.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
-              <folding>
-                <marker date="1430799690745" expanded="true" signature="370:1887" placeholder="{...}" />
-              </folding>
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scripts.jade" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MultiVision/server/includes/scripts.jade">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4002242">
+              <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mvCourse.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourse.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="64" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -67,77 +71,7 @@
         <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-courses.jade" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/new-courses.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.114754096">
-              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="featured-courses.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="course-list.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/course-list.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="site.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/css/site.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mvCourseListCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mongoose.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/server/config/mongoose.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MultiVision/server/models/User.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="0" column="79" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -188,7 +122,6 @@
         <option value="$PROJECT_DIR$/MultiVision/server/models/User.js" />
         <option value="$PROJECT_DIR$/MultiVision/server/controllers/users.js" />
         <option value="$PROJECT_DIR$/MultiVision/server/views/index.jade" />
-        <option value="$PROJECT_DIR$/MultiVision/server/includes/scripts.jade" />
         <option value="$PROJECT_DIR$/MultiVision/public/app/app.js" />
         <option value="$PROJECT_DIR$/MultiVision/server/controllers/courses.js" />
         <option value="$PROJECT_DIR$/MultiVision/server/config/routes.js" />
@@ -196,11 +129,13 @@
         <option value="$PROJECT_DIR$/MultiVision/server/config/mongoose.js" />
         <option value="$PROJECT_DIR$/MultiVision/server/models/Course.js" />
         <option value="$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade" />
-        <option value="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js" />
         <option value="$PROJECT_DIR$/MultiVision/public/css/site.styl" />
         <option value="$PROJECT_DIR$/MultiVision/public/app/courses/course-list.jade" />
-        <option value="$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js" />
         <option value="$PROJECT_DIR$/MultiVision/public/app/main/new-courses.jade" />
+        <option value="$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js" />
+        <option value="$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js" />
+        <option value="$PROJECT_DIR$/MultiVision/public/app/courses/mvCachedCourse.js" />
+        <option value="$PROJECT_DIR$/MultiVision/server/includes/scripts.jade" />
       </list>
     </option>
   </component>
@@ -566,7 +501,7 @@
     <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="settings.editor.splitter.proportion" value="0.22108495" />
-    <property name="SearchEverywhereHistoryKey" value="main&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/main/mvMainCtrl.js&#10;sit&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/css/site.styl&#10;mvc&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/mvCourseListCtrl.js&#10;course-l&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/course-list.jade&#10;app&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/app.js&#10;mvco&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/mvCourse.js&#10;scri&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/includes/scripts.jade&#10;mon&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/config/mongoose.js&#10;rou&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/config/routes.js&#10;site&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/css/site.styl&#10;index&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/views/index.jade&#10;signu&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/signup.jade&#10;navb&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/navbar-login.jade&#10;mva&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/mvAuth.js&#10;mvn&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/common/mvNotifier.js&#10;na&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/navbar-login.jade&#10;inde&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/views/index.jade" />
+    <property name="SearchEverywhereHistoryKey" value="scri&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/includes/scripts.jade&#10;mvma&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/main/mvMainCtrl.js&#10;mvc&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/mvCourseListCtrl.js&#10;mvcour&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/mvCourseListCtrl.js&#10;main&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/main/mvMainCtrl.js&#10;sit&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/css/site.styl&#10;course-l&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/course-list.jade&#10;app&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/app.js&#10;mvco&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/courses/mvCourse.js&#10;mon&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/config/mongoose.js&#10;rou&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/config/routes.js&#10;site&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/css/site.styl&#10;index&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/views/index.jade&#10;signu&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/signup.jade&#10;navb&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/navbar-login.jade&#10;mva&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/mvAuth.js&#10;mvn&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/common/mvNotifier.js&#10;na&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/public/app/account/navbar-login.jade&#10;inde&#9;FILE&#9;file://C:/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider/MultiVision/server/views/index.jade" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -677,13 +612,13 @@
     <frame x="-4" y="-4" width="1928" height="1036" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17798841" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.53125" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20510095" sideWeight="0.49791667" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943678" sideWeight="0.46875" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -723,13 +658,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MultiVision/bower.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5284974">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiVision/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.029360967">
@@ -994,14 +922,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/server/includes/scripts.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiVision/server/controllers/courses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1018,14 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiVision/server/config/routes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1034,59 +946,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/server/config/mongoose.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/server/models/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/server/models/Course.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
-          <folding>
-            <marker date="1430799690745" expanded="true" signature="370:1887" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MultiVision/public/css/site.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.57377046">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
           <folding />
         </state>
@@ -1094,16 +956,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/course-list.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.3442623">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js">
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/featured-courses.jade">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.091803275">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1111,7 +973,81 @@
     <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/new-courses.jade">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.114754096">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/server/models/Course.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06885246">
+          <caret line="3" column="59" selection-start-line="3" selection-start-column="59" selection-end-line="3" selection-end-column="59" />
+          <folding>
+            <marker date="1430799690745" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5180328">
+          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/server/config/mongoose.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39016393">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/server/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08196721">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourseListCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="64" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/main/mvMainCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="79" selection-start-line="0" selection-start-column="65" selection-end-line="0" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/public/app/courses/mvCachedCourse.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MultiVision/server/includes/scripts.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4002242">
+          <caret line="17" column="68" selection-start-line="17" selection-start-column="68" selection-end-line="17" selection-end-column="68" />
           <folding />
         </state>
       </provider>
