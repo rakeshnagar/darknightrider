@@ -1,1 +1,16 @@
+cd /home/ubuntu/workspace/MultiVision
+
+1) Install App dependencies
+
+npm install
+
+2) Start Mongo
+
+./start-mongodb-c9io.sh
+
+3) Start Node
+./start-node.bat
+
+4) Access App
+
 https://multivision-rakeshnagar.c9.io/
