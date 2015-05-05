@@ -1,1 +1,2 @@
-mongod --dbpath /home/ubuntu/workspace/MultiVision/mongo-data --smallfiles
+mkdir -p ./mongo-data
+mongod --dbpath mongo-data --smallfiles

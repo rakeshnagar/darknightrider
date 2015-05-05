@@ -1,5 +1,9 @@
 cd /home/ubuntu/workspace/MultiVision
 
+0) Install nodemon
+
+npm install nodemon -g
+
 1) Install App dependencies
 
 npm install
@@ -9,8 +13,9 @@ npm install
 ./start-mongodb-c9io.sh
 
 3) Start Node
+
 ./start-node.bat
 
 4) Access App
 
-https://multivision-rakeshnagar.c9.io/
+https://mymoneybuddy-v1-rakeshnagar.c9.io/
