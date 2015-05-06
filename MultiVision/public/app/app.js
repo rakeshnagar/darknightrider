@@ -40,6 +40,8 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
             controller: 'mvProfileCtrl', resolve: routeRoleChecks.user})
         .when('/courses', {templateUrl: '/partials/courses/course-list',
             controller: 'mvCourseListCtrl'})
+        .when('/analyze', {templateUrl: '/partials/analysis/analyze',
+            controller: 'mvAnalysisCtrl'})            
         .when('/courses/:id', {templateUrl: '/partials/courses/course-details',
             controller: 'mvCourseDetailsCtrl'});
 });

@@ -24,6 +24,9 @@ footer p {
 .top-padding-med {
   padding-top: 10px;
 }
+.bottom-padding-med {
+  padding-bottom: 10px;
+}
 .margin-left-med {
   padding-left: 10px;
 }
@@ -35,4 +38,36 @@ footer p {
 }
 .toast-error {
   background-color: #bd362f;
+}
+.buttonx {
+  border-top: 1px solid #96d1f8;
+  background: #65a9d7;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+  background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+  background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+  background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+  background: -o-linear-gradient(top, #3e779d, #65a9d7);
+  padding: 20px 40px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  -webkit-box-shadow: #000 0 1px 0;
+  -moz-box-shadow: #000 0 1px 0;
+  box-shadow: #000 0 1px 0;
+  text-shadow: rgba(0,0,0,0.4) 0 1px 0;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+}
+.buttonx:hover {
+  border-top-color: #28597a;
+  background: #28597a;
+  color: #ccc;
+}
+.buttonx:active {
+  border-top-color: #1b435e;
+  background: #1b435e;
 }
