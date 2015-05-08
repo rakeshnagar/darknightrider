@@ -12,13 +12,16 @@ module.exports = function (config) {
         console.log('multivision db opened');
     });
 
+    /* logs mongooose queries on console */
+    mongoose.set('debug', true);
+
     console.log('calling userModel.createDefaultUsers()');
     userModel.createDefaultUsers();
 
     console.log('calling courseModel.createDefaultCourses()');
     courseModel.createDefaultCourses();
 
-    console.log('calling transactionModel.createDefaultTransactions()');
-    transactionModel.createDefaultTransactions();
-    console.log('transactionModel.createDefaultTransactions() -- done!');    
+    // console.log('calling transactionModel.createDefaultTransactions()');
+    // transactionModel.createDefaultTransactions();
+    // console.log('transactionModel.createDefaultTransactions() -- done!');    
 }

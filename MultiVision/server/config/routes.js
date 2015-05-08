@@ -8,6 +8,9 @@ var User = mongoose.model('User');
 
 module.exports = function (app) {
 
+
+
+
     app.get('/api/users', auth.requiresRole('admin'), users.getUsers);
     app.post('/api/users', users.createUser);
     app.put('/api/users', users.updateUser);
@@ -16,6 +19,8 @@ module.exports = function (app) {
     app.get('/api/courses/:id', courses.getCourseById);
 
     app.get('/api/transactions', transactions.getTransactions);
+    app.get('/api/transactions/:year/month', transactions.getTransactionsRolledUpByMonths);
+    app.get('/api/transactions/:year/month/:month', transactions.getTransactionsRolledUpByMonths);
     app.get('/api/transactions/:id', transactions.getTransactionById);
 
     app.get('/partials/*', function (req, res) {
