@@ -1,0 +1,82 @@
+.container.top-padding-med.bottom-padding-med
+
+.container.top-padding-med.bottom-padding-med(style="width: 640px;")
+    div.tile-container.bg-cyan(style="width: 640px")
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") January
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.January}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") Feburary
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.Feburary}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") March
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.March}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") April
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.April}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") May
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.May}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") June
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.June}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") July
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.July}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") August
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.August}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") September
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.September}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") October
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.October}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") November
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.November}})
+        div.tile.bg-green.fg-white(data-role="tile")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") December
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{yearly.December}})
+
+
+
+.container.top-padding-med.bottom-padding-med(style="width: 640px;")
+    div.tile-container.bg-cyan(style="width: 640px")
+        div.tile.bg-green.fg-white(data-role="tile", ng-repeat="category in categoryList")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{category.title}}
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{category.total}})
+
+.container.top-padding-med.bottom-padding-med(style="width: 640px;")
+    div.tile-container.bg-cyan(style="width: 640px")
+        div.tile.bg-green.fg-white(data-role="tile", ng-repeat="transaction in transactions")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{transaction._id}}
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{transaction.totalAmount}})

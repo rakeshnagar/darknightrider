@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var userModel = require('../models/User');
 var courseModel = require('../models/Course');
+var transactionModel = require('../models/Transaction');
 
 module.exports = function (config) {
 
@@ -16,4 +17,8 @@ module.exports = function (config) {
 
     console.log('calling courseModel.createDefaultCourses()');
     courseModel.createDefaultCourses();
+
+    console.log('calling transactionModel.createDefaultTransactions()');
+    transactionModel.createDefaultTransactions();
+    console.log('transactionModel.createDefaultTransactions() -- done!');    
 }

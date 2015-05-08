@@ -7,7 +7,8 @@ html
         link(rel="stylesheet", href="/css/bootstrap.css")
         link(rel="stylesheet", href="/vendor/toastr/toastr.css")
         link(rel="stylesheet", href="/css/site.css")
-    body(ng-app='app')
+        link(rel="stylesheet", href="/vendor/metro/build/css/metro.css")
+    body.top-body-padding(ng-app='app')
         include currentUser
         block main-content
         include scripts

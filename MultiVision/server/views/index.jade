@@ -12,8 +12,16 @@ block main-content
                         a(href="/") Home
                     li
                         a(href="/courses") Courses
-                    li
-                        a(href="/analyze") Analyze
+                    li.dropdown        
+                        a.dropdown-toggle(href="", data-toggle="dropdown")
+                            | Analyze
+                            b.caret
+                        ul.dropdown-menu
+                            li
+                                a(href="/analyze") Analyze 1
+                            li
+                                a(href="/analyze2") Analyze 2
+
                 div(ng-include="'/partials/account/navbar-login'")
 
     section.content

@@ -1,0 +1,85 @@
+@import (once) "variables";
+@import (once) "typography";
+@import (once) "utils";
+
+.breadcrumbs {
+	.flush-list;
+	background-color: @white;
+	color: #999;
+	padding: 1rem;
+
+	& > li {
+		display: inline-block;
+		color: inherit;
+		margin: 0 1rem 0 0;
+		position: relative;
+		vertical-align: middle;
+
+		&:before, &:after {
+			display: block;
+			position: absolute;
+			vertical-align: middle;
+			color: transparent;
+			font-size: 0;
+			content: "";
+			height: 1px;
+			width: .375rem;
+			background-color: @dark;
+			top: 50%;
+			left: 100%;
+			margin-left: .5rem;
+		}
+
+		&:before {
+			.rotate(45deg);
+			margin-top: -.125rem;
+		}
+
+		&:after {
+			.rotate(-45deg);
+			margin-top: .125rem;
+		}
+
+		& > a {
+			color: inherit;
+			display: inline-block;
+			line-height: 1;
+		}
+
+		&:last-child {
+			color: @dark;
+			font-weight: bolder;
+			a {cursor: default;}
+			&:before, &:after {
+				background-color: @transparent;
+			}
+		}
+
+		&:hover {
+			color: @dark;
+		}
+	}
+
+	img, .icon {
+		display: inline-block;
+		line-height: .8;
+		height: 1rem;
+		width: 1rem;
+		font-size: 1rem;
+		vertical-align: -15%;
+	}
+
+	&.dark {
+		background-color: #393832;
+
+		& > li {
+			&:hover, &:last-child {
+				color: @white;
+			}
+
+			&:before, &:after {
+				background-color: @white;
+			}
+		}
+	}
+}

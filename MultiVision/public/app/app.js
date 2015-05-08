@@ -41,7 +41,9 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
         .when('/courses', {templateUrl: '/partials/courses/course-list',
             controller: 'mvCourseListCtrl'})
         .when('/analyze', {templateUrl: '/partials/analysis/analyze',
-            controller: 'mvAnalysisCtrl'})            
+            controller: 'mvAnalysisCtrl'})
+        .when('/analyze2', {templateUrl: '/partials/analysis/analyze2',
+            controller: 'mvAnalysisCtrl'})
         .when('/courses/:id', {templateUrl: '/partials/courses/course-details',
             controller: 'mvCourseDetailsCtrl'});
 });
