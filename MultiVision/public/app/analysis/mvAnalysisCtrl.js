@@ -125,7 +125,7 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvTransactio
     $scope.tiles = [
                     {
                         "heading": "Root",
-                        "type":"root",
+                        "type":"year",
                         "tiles": [
                             {
                                 "title": "2015",
@@ -145,12 +145,20 @@ $scope.expand = function (id, clickedOn) {
     console.log("expand clicked type="+clickedOn);
 
     //console.log("transactions >>>>>>>> " + $scope.transactions);
+    var tileGroup;
     var tileGroups = [];
+    var tiles = [];
+    var map = new Map();
+    var year, month, date, catagory;
+    var tile;
+    // $scope.year=null;
+    // $scope.month=null;
+    // $scope.category=null;
 
     if (!clickedOn || clickedOn === "root") {
         console.log ("processing root...");
 
-        var tileGroup = {
+        tileGroup = {
             "heading": "Root",
             "type": "year",
             "parent": {
@@ -159,13 +167,9 @@ $scope.expand = function (id, clickedOn) {
         };
         
         tileGroups.push(tileGroup);
-        var tiles = [];
-        var map = new Map();
-        var year, date;
 
         if ($scope.transactions) {
             $scope.transactions.forEach(function(entry) {
-                console.log(entry);
                 date = new Date(entry.timestamp);                
                 year = date.getFullYear();
 
@@ -176,10 +180,8 @@ $scope.expand = function (id, clickedOn) {
                 }
             });
 
-            console.log(map);
-
             map.forEach(function (total, year) {
-                var tile = {
+                tile = {
                             "title": year,
                             "total": total
                         };
@@ -191,8 +193,9 @@ $scope.expand = function (id, clickedOn) {
     }
 
     if (clickedOn === "year") {
+        $scope.year=id;
         console.log ("processing year...");        
-        var tileGroup = {
+        tileGroup = {
             "heading": id,
             "type": "month",
             "parent": {
@@ -201,29 +204,137 @@ $scope.expand = function (id, clickedOn) {
         };
         
         tileGroups.push(tileGroup);
-        var tiles = [];
 
         if ($scope.transactions) {
+
             $scope.transactions.forEach(function(entry) {
-                console.log(entry);
-                var date = new Date(entry.timestamp);
-                console.log(date.getFullYear());
-                console.log(months[date.getMonth()]);
+                date = new Date(entry.timestamp);
 
                  if (date.getFullYear() == id) {
-                    console.log ("Found " + id);
+                    month = months[date.getMonth()];
 
-                    var tile = {
-                                "title": months[date.getMonth()],
-                                "total": "250"
-                            };
-                    tiles.push(tile);
-                 }
+                    if (map.has(month)) {
+                        map.set(month, (map.get(month) + entry.totalAmount));
+                    } else {
+                       map.set(month, entry.totalAmount);
+                    }
+                }
+             });
+
+            map.forEach(function (total, month) {
+                tile = {
+                            "title": month,
+                            "total": total
+                        };
+
+                tiles.push(tile);                              
             });
         }
 
         tileGroup.tiles = tiles;
     }    
+
+
+    if (clickedOn === "month") {
+        console.log ("processing month..."); 
+
+        $scope.month=id;
+        tileGroup = {
+            "heading": id,
+            "type": "catagory",
+            "parent": {
+                "heading":$scope.year, 
+                "type":"year"}
+        };
+        
+        tileGroups.push(tileGroup);
+
+        if ($scope.transactions) {
+
+            $scope.transactions.forEach(function(entry) {
+                date = new Date(entry.timestamp);
+                month = months[date.getMonth()];
+
+                 if ((date.getFullYear() == $scope.year) && (month == id)) {
+                    entry.items.forEach(function(item) {
+                        catagory = item.product.catagory;
+
+                        if (map.has(catagory)) {
+                            map.set(catagory, (map.get(catagory) + item.price));
+                        } else {
+                           map.set(catagory, item.price);
+                        }
+                    });
+                }
+             });
+
+            map.forEach(function (total, catagory) {
+                tile = {
+                            "title": catagory,
+                            "total": total
+                        };
+
+                tiles.push(tile);                              
+            });
+        }
+
+        tileGroup.tiles = tiles;
+    } 
+
+    if (clickedOn === "catagory") {
+        console.log ("processing catagory..."); 
+
+        $scope.catagory=id;
+        tileGroup = {
+            "heading": id,
+            "type": "items",
+            "parent": {
+                "heading":$scope.month, 
+                "type":"month"}
+        };
+        
+        tileGroups.push(tileGroup);
+
+        if ($scope.transactions) {
+
+            $scope.transactions.forEach(function(entry) {
+                date = new Date(entry.timestamp);
+                month = months[date.getMonth()];
+
+                 if ((date.getFullYear() == $scope.year) && (month === $scope.month)) {
+                    entry.items.forEach(function(item) {
+                        catagory = item.product.catagory;
+
+                    if (catagory === id) {
+                        tile = {
+                            "title": item.product.name,
+                            "total": item.price
+                        };
+                        tiles.push(tile);
+                        // if (map.has(catagory)) {
+                        //     map.set(catagory, (map.get(catagory) + entry.totalAmount));
+                        // } else {
+                        //    map.set(catagory, entry.totalAmount);
+                        // }
+
+                    }
+                    });
+                }
+             });
+
+            // map.forEach(function (total, catagory) {
+            //     tile = {
+            //                 "title": catagory,
+            //                 "total": total
+            //             };
+
+            //     tiles.push(tile);                              
+            // });
+        }
+
+        tileGroup.tiles = tiles;
+    }     
+
 
     console.log(JSON.stringify(tileGroups));
 

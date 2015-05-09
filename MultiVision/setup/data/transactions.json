@@ -215,16 +215,27 @@
                 }
             },
             {
-                "unitPrice": 20,
+                "unitPrice": 15,
                 "qualtity": 1,
-                "price": 20,
+                "price": 15,
                 "currency": "USD",
                 "product": {
                     "code": "cd2",
-                    "name": "name2",
-                    "catagory": "cat2"
+                    "name": "Cake",
+                    "catagory": "Bakery"
                 }
-            }
+            },
+            {
+                "unitPrice": 5,
+                "qualtity": 1,
+                "price": 5,
+                "currency": "USD",
+                "product": {
+                    "code": "cd2",
+                    "name": "Bread",
+                    "catagory": "Bakery"
+                }
+            }            
         ],
         "merchant": {
             "code": "M12345",
