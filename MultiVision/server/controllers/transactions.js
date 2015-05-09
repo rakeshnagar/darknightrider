@@ -1,3 +1,10 @@
+/*
+	Pivot by
+	Year -> Month -> (Category + Product)
+	Merchant -> Year -> Month -> (Category + Product)
+	Category -> Year -> Month -> Product
+
+*/
 var Transaction = require('mongoose').model('Transaction');
 
 var getTransactions = function (req, res) {

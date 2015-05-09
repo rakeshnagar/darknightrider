@@ -1,0 +1,12 @@
+.container.top-padding-med.bottom-padding-med    
+
+.container.top-padding-med.bottom-padding-med(style="width: 640px;", ng-repeat="tilex in tiles")    
+    div.label.bg-cyan(style="width: 640px;") 
+        a.fg-white(href="", ng-click="expand(tilex.parent.title, tilex.parent.type)") Back
+    div.label.bg-cyan(style="width: 640px;") {{tilex.heading}}
+    div.tile-container.bg-cyan(style="width: 640px")        
+        div.tile.bg-green.fg-white(data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
+            div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
+                span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{tiley.title}}
+            div(style="overflow:hidden;  text-align: center;")
+                span.badge.bg-darkRed (${{tiley.total}})        

@@ -2,7 +2,7 @@
     {
         "id": "id1",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-01-01T00:00:00.000Z"},
+        "timestamp": {"$date":"2015-03-01T00:00:00.000Z"},
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 50,
@@ -39,7 +39,7 @@
     {
         "id": "id2",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-02-01T00:00:00.000Z"},
+        "timestamp": {"$date":"2015-04-01T00:00:00.000Z"},
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 300,
@@ -87,7 +87,118 @@
     {
         "id": "id3",
         "userId": "rakesh",
-        "timestamp": {"$date":"2014-01-01T00:00:00.000Z"},
+        "timestamp": {"$date":"2014-02-10T00:00:00.000Z"},
+        "serviceType": "Goods",
+        "transactionType": "InStore",
+        "totalAmount": 50,
+        "items": [
+            {
+                "unitPrice": 10,
+                "qualtity": 3,
+                "price": 30,
+                "currency": "USD",
+                "product": {
+                    "code": "cd1",
+                    "name": "name1",
+                    "catagory": "cat1"
+                }
+            },
+            {
+                "unitPrice": 20,
+                "qualtity": 1,
+                "price": 20,
+                "currency": "USD",
+                "product": {
+                    "code": "cd2",
+                    "name": "name2",
+                    "catagory": "cat2"
+                }
+            }
+        ],
+        "merchant": {
+            "code": "M12345",
+            "name": "Macys",
+            "location": "Ballston Mall"
+        }
+    },
+    {
+        "id": "id3",
+        "userId": "rakesh",
+        "timestamp": {"$date":"2014-03-23T00:00:00.000Z"},
+        "serviceType": "Goods",
+        "transactionType": "InStore",
+        "totalAmount": 50,
+        "items": [
+            {
+                "unitPrice": 10,
+                "qualtity": 3,
+                "price": 30,
+                "currency": "USD",
+                "product": {
+                    "code": "cd1",
+                    "name": "name1",
+                    "catagory": "cat1"
+                }
+            },
+            {
+                "unitPrice": 20,
+                "qualtity": 1,
+                "price": 20,
+                "currency": "USD",
+                "product": {
+                    "code": "cd2",
+                    "name": "name2",
+                    "catagory": "cat2"
+                }
+            }
+        ],
+        "merchant": {
+            "code": "M12345",
+            "name": "Macys",
+            "location": "Ballston Mall"
+        }
+    },
+    {
+        "id": "id3",
+        "userId": "rakesh",
+        "timestamp": {"$date":"2014-04-11T00:00:00.000Z"},
+        "serviceType": "Goods",
+        "transactionType": "InStore",
+        "totalAmount": 50,
+        "items": [
+            {
+                "unitPrice": 10,
+                "qualtity": 3,
+                "price": 30,
+                "currency": "USD",
+                "product": {
+                    "code": "cd1",
+                    "name": "name1",
+                    "catagory": "cat1"
+                }
+            },
+            {
+                "unitPrice": 20,
+                "qualtity": 1,
+                "price": 20,
+                "currency": "USD",
+                "product": {
+                    "code": "cd2",
+                    "name": "name2",
+                    "catagory": "cat2"
+                }
+            }
+        ],
+        "merchant": {
+            "code": "M12345",
+            "name": "Macys",
+            "location": "Ballston Mall"
+        }
+    },
+    {
+        "id": "id3",
+        "userId": "rakesh",
+        "timestamp": {"$date":"2014-05-21T00:00:00.000Z"},
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 50,
