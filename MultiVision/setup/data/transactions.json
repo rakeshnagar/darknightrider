@@ -198,7 +198,7 @@
     {
         "id": "id3",
         "userId": "rakesh",
-        "timestamp": {"$date":"2014-05-21T00:00:00.000Z"},
+        "timestamp": {"$date":"2014-05-11T00:00:00.000Z"},
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 50,
@@ -239,8 +239,45 @@
         ],
         "merchant": {
             "code": "M12345",
-            "name": "Macys",
-            "location": "Ballston Mall"
+            "name": "Giants",
+            "location": "Virginia Square, VA 22203"
         }
-    }
+    },
+    {
+        "id": "id4",
+        "userId": "rakesh",
+        "timestamp": {"$date":"2014-05-22T00:00:00.000Z"},
+        "serviceType": "Goods",
+        "transactionType": "InStore",
+        "totalAmount": 40,
+        "items": [
+            {
+                "unitPrice": 10,
+                "qualtity": 1,
+                "price": 10,
+                "currency": "USD",
+                "product": {
+                    "code": "cd5",
+                    "name": "Cup Cakes",
+                    "catagory": "Bakery"
+                }
+            },
+            {
+                "unitPrice": 3,
+                "qualtity": 10,
+                "price": 30,
+                "currency": "USD",
+                "product": {
+                    "code": "cd2",
+                    "name": "Milk",
+                    "catagory": "Beverages"
+                }
+            }            
+        ],
+        "merchant": {
+            "code": "M12345",
+            "name": "Giants",
+            "location": "Virginia Square, VA 22203"
+        }
+    }    
 ]

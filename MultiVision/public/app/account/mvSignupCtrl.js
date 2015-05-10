@@ -3,10 +3,10 @@ angular.module('app').controller('mvSignupCtrl', function ($scope, mvUser, mvNot
         console.log('In signup');
 
         var newUserData = {
-            username: $scope.email,
-            password: $scope.password,
+            username:  $scope.email,
+            password:  $scope.password,
             firstName: $scope.fname,
-            lastName: $scope.lname
+            lastName:  $scope.lname
         };
 
         mvAuth.createUser(newUserData).then(function () {

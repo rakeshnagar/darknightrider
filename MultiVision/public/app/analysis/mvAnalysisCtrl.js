@@ -1,10 +1,10 @@
 //http://bjorn.tipling.com/maps-sets-and-iterators-in-javascript
 
-angular.module('app').controller('mvAnalysisCtrl', function($scope, mvTransaction) {
+angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTransaction) {
 
     var transactions;
 
-    mvTransaction.query().$promise.then(function (collection) {         
+    mvCachedTransaction.query().$promise.then(function (collection) {         
         $scope.transactions = collection
     });
 
@@ -148,6 +148,7 @@ $scope.expand = function (id, clickedOn) {
     var tileGroup;
     var tileGroups = [];
     var tiles = [];
+    var filteredTransactions = [];
     var map = new Map();
     var year, month, date, catagory;
     var tile;
@@ -184,6 +185,7 @@ $scope.expand = function (id, clickedOn) {
                 tile = {
                             "title": year,
                             "total": total
+                            //"leaf": false
                         };
                 tiles.push(tile);              
             });
@@ -225,6 +227,7 @@ $scope.expand = function (id, clickedOn) {
                 tile = {
                             "title": month,
                             "total": total
+                            //"leaf": false
                         };
 
                 tiles.push(tile);                              
@@ -272,6 +275,7 @@ $scope.expand = function (id, clickedOn) {
                 tile = {
                             "title": catagory,
                             "total": total
+                            //"leaf": false
                         };
 
                 tiles.push(tile);                              
@@ -308,28 +312,68 @@ $scope.expand = function (id, clickedOn) {
                     if (catagory === id) {
                         tile = {
                             "title": item.product.name,
-                            "total": item.price
+                            "total": item.price,
+                            "leaf": false
                         };
                         tiles.push(tile);
-                        // if (map.has(catagory)) {
-                        //     map.set(catagory, (map.get(catagory) + entry.totalAmount));
-                        // } else {
-                        //    map.set(catagory, entry.totalAmount);
-                        // }
-
                     }
                     });
                 }
              });
+        }
 
-            // map.forEach(function (total, catagory) {
-            //     tile = {
-            //                 "title": catagory,
-            //                 "total": total
-            //             };
+        tileGroup.tiles = tiles;
+    }     
 
-            //     tiles.push(tile);                              
-            // });
+    if (clickedOn === "items") {
+        console.log ("processing item..."); 
+
+        $scope.item=id;
+        tileGroup = {
+            "heading": id,
+            "type": "item",
+            "parent": {
+                "heading":$scope.catagory, 
+                "type":"catagory"}
+        };
+        
+        tileGroups.push(tileGroup);
+
+        if ($scope.transactions) {
+
+            // tile = {
+            //     "title": "xxx",
+            //     "total": "xxx",
+            //     "leaf": true
+            // };
+            // tiles.push(tile);
+
+
+            $scope.transactions.forEach(function(entry) {
+                date = new Date(entry.timestamp);
+                month = months[date.getMonth()];
+
+                 if ((date.getFullYear() == $scope.year) && (month === $scope.month)) {
+
+                     entry.items.some(function(item) {                    
+                        if (item.product.catagory === $scope.catagory) {
+                            filteredTransactions.push(entry);
+                            return true;
+                        }
+                        });
+                    // entry.items.forEach(function(item) {
+                    //     catagory = item.product.catagory;
+
+                    //     if (catagory === $scope.catagory) {
+                    //         transactions.push(entry);
+                    //     }
+                    // });
+                }
+             });
+
+            $scope.filteredTransactions = filteredTransactions;
+
+            console.log("filteredTransactions >> " +JSON.stringify(filteredTransactions));
         }
 
         tileGroup.tiles = tiles;
@@ -339,23 +383,7 @@ $scope.expand = function (id, clickedOn) {
     console.log(JSON.stringify(tileGroups));
 
     $scope.tiles = tileGroups;
-    
-    // $scope.tiles1 = [
-    //                 {
-    //                     "heading": "xxx",
-    //                     "type":"month",
-    //                     "tiles": [
-    //                         {
-    //                             "title": "January",
-    //                             "total": "250"
-    //                         },
-    //                         {
-    //                             "title": "Feburary",
-    //                             "total": "350"
-    //                         }
-    //                     ]
-    //                 }
-    //             ];
+
 }               
 
 });

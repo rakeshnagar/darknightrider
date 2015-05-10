@@ -1,12 +1,36 @@
 .container.top-padding-med.bottom-padding-med    
 
 .container.top-padding-med.bottom-padding-med(style="width: 640px;", ng-repeat="tilex in tiles")    
-    div.label.bg-cyan(style="width: 640px;") 
+    div.label.bg-darkCobalt(style="width: 640px;") 
         a.fg-white(href="", ng-click="expand(tilex.parent.heading, tilex.parent.type)") Back
-    div.label.bg-cyan(style="width: 640px;") {{tilex.heading}}
-    div.tile-container.bg-cyan(style="width: 640px")        
-        div.tile.bg-green.fg-white(data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
+    div.label.bg-darkCobalt(style="width: 640px;") {{tilex.heading}}
+    div.tile-container.bg-darkCobalt(style="width: 640px")    
+        div.tile.fg-white(ng-class-odd="'bg-cyan'", ng-class-even="'bg-orange'", data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
             div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
                 span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{tiley.title}}
             div(style="overflow:hidden;  text-align: center;")
-                span.badge.bg-darkRed (${{tiley.total}})        
+                span.badge.bg-darkRed (${{tiley.total}})
+
+    div.tile-container.bg-lighterGrey(ng-show="tilex.type == 'item'", style="width: 640px")    
+        div(ng-repeat="tx  in filteredTransactions")            
+            p.top-padding-med.bg-info {{tx.merchant.name}}, {{tx.merchant.location}}
+            p.bg-info {{tx.timestamp |  date:'dd-MMMM-yyyy, h:mm:ss a'}}
+
+            table.table.table-hover.table-striped.table-condensed
+                thead
+                    tr
+                        th Item Name
+                        th Qty
+                        th Rate
+                        th Cost
+                    tbody
+                        tr(ng-repeat="item in tx.items")
+                            td.col-md-6 {{item.product.name}}
+                            td.col-md-6 {{item.qualtity}}
+                            td.col-md-6 {{item.unitPrice}}
+                            td.col-md-6 {{item.price}}
+                        tr
+                            td.col-md-6 
+                            td.col-md-6 
+                            td.col-md-6 Total:
+                            td.col-md-6 {{tx.totalAmount}}
