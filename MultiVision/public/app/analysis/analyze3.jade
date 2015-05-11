@@ -2,7 +2,7 @@
 
 .container.top-padding-med.bottom-padding-med(style="width: 640px;", ng-repeat="tilex in tiles")    
     div.label.bg-darkCobalt(style="width: 640px;") 
-        a.fg-white(href="", ng-click="expand(tilex.parent.heading, tilex.parent.type)") Back
+        a.fg-white(href="", ng-click="expand(tilex.parent.heading, tilex.parent.type)") Back            
     div.label.bg-darkCobalt(style="width: 640px;") {{tilex.heading}}
     div.tile-container.bg-darkCobalt(style="width: 640px")    
         div.tile.fg-white(ng-class-odd="'bg-cyan'", ng-class-even="'bg-orange'", data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
@@ -13,7 +13,7 @@
 
     div.tile-container.bg-lighterGrey(ng-show="tilex.type == 'item'", style="width: 640px")    
         div(ng-repeat="tx  in filteredTransactions")            
-            p.top-padding-med.bg-info {{tx.merchant.name}}, {{tx.merchant.location}}
+            p.top-padding-med.sub-alt-header {{tx.merchant.name}}, {{tx.merchant.location}}
             p.bg-info {{tx.timestamp |  date:'dd-MMMM-yyyy, h:mm:ss a'}}
 
             table.table.table-hover.table-striped.table-condensed

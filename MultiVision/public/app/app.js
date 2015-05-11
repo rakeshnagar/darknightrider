@@ -1,5 +1,12 @@
 angular.module('app', ['ngResource', 'ngRoute']);
 
+//http://www.ng-newsletter.com/posts/d3-on-angular.html
+//angular.module('d3', []).factory('d3Service', [function(){
+//    var d3;
+//    // insert d3 code here
+//    return d3;
+// }];
+
 angular.module('app').config(function ($routeProvider, $locationProvider) {
     var routeRoleChecks = {
         admin: {
@@ -46,6 +53,8 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
             controller: 'mvAnalysisCtrl'})
         .when('/analyze3', {templateUrl: '/partials/analysis/analyze3',
             controller: 'mvAnalysisCtrl'})
+        .when('/graph1', {templateUrl: '/partials/analysis/graph1',
+            controller: 'mvAnalysisGraphCtrl'})
         .when('/courses/:id', {templateUrl: '/partials/courses/course-details',
             controller: 'mvCourseDetailsCtrl'});
 });

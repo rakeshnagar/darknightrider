@@ -1,0 +1,22 @@
+.container.top-padding-med.bottom-padding-med
+    div
+        span hello
+    linear-chart(chart-data="salesData")
+
+    div(id="d3-bars" bar-height="20" bar-padding="5")
+
+    d3-bars(data="data" bar-height="20" bar-padding="5")
+
+    bars(data="40,4,55,15,16,33,52,20,4")
+
+    div(id='viz')
+    script(type="text/javascript").
+      d3.select("#viz")
+        .append("svg")
+          .attr('width', 600)
+          .attr('height', 300)
+          .append('circle')
+            .attr('cx', 300)
+            .attr('cy', 150)
+            .attr('r', 30)
+            .attr('fill', '#26963c')

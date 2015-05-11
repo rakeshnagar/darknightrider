@@ -80,3 +80,17 @@
                 span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{transaction._id}}
             div(style="overflow:hidden;  text-align: center;")
                 span.badge.bg-darkRed (${{transaction.totalAmount}})
+
+
+.container.top-padding-med.bottom-padding-med
+    div.listview-outlook(data-role="listview")
+        div.list-group
+            span.list-group-toggle Today
+            div.list-group-content
+                div.list first
+                div.list second
+
+
+.container.top-padding-med.bottom-padding-med
+    div(id="chart-ring-year")
+    div(id="chart-row-spenders")

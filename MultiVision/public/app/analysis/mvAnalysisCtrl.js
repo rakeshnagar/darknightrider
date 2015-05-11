@@ -1,4 +1,10 @@
 //http://bjorn.tipling.com/maps-sets-and-iterators-in-javascript
+// Chart Examples
+//http://dc-js.github.io/dc.js/examples/cust.html
+//http://frozen-hollows-5121.herokuapp.com/
+//http://www.jasondavies.com/coffee-wheel/
+// https://live.zoomdata.com/zoomdata/visualization#
+// http://bl.ocks.org/kerryrodden/477c1bfb081b783f80ad
 
 angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTransaction) {
 
