@@ -20,3 +20,21 @@
             .attr('cy', 150)
             .attr('r', 30)
             .attr('fill', '#26963c')
+    chart2
+    br    
+    h3 Drag data points to re-render chart
+    chart3
+    br
+    sunburst
+      div(id="sunburst_main")
+        h3 Sunburst
+        div(id="sunburst_sequence")
+        div(id="sunburst_chart")
+          div(id="sunburst_explanation", style="visibility: hidden;")
+            span(id="sunburst_percentage")
+            br
+            span of visits begin with this sequence of pages
+      div(id="sunburst_sidebar")
+        input(type="checkbox", id="togglelegend")
+        span Legend
+        div(id="sunburst_legend", style="visibility: hidden;")

@@ -135,11 +135,11 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
                         "tiles": [
                             {
                                 "title": "2015",
-                                "total": "350"
+                                "total": "??"
                             },
                             {
                                 "title": "2014",
-                                "total": "200"
+                                "total": "??"
                             }
                         ]
                     }
