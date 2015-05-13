@@ -140,7 +140,11 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
                             {
                                 "title": "2014",
                                 "total": "??"
-                            }
+                            },
+                            {
+                                "title": "2013",
+                                "total": "??"
+                            }                            
                         ]
                     }
                 ];
