@@ -2,53 +2,83 @@
     {
         "id": "466",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-01-04T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2015-01-04T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 18.17,
         "items": [
             {
                 "unitPrice": 9.74,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 9.74,
                 "currency": "USD",
                 "product": {
                     "code": "1",
                     "name": "Bread",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 3.45,
-                "qualtity": 2,
-                "price": 6.90,
+                "quantity": 2,
+                "price": 6.9,
                 "currency": "USD",
                 "product": {
                     "code": "2",
                     "name": "Milk",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 2.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 2.99,
                 "currency": "USD",
                 "product": {
                     "code": "5",
                     "name": "Interstellar(BlueRay)",
-                    "catagory": "Entertainment"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 1.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 1.99,
                 "currency": "USD",
                 "product": {
                     "code": "5",
                     "name": "Inception (DVD)",
-                    "catagory": "Entertainment"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -61,31 +91,47 @@
     {
         "id": "468",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-01-06T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2015-01-06T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 12.15,
         "items": [
             {
                 "unitPrice": 3.58,
-                "qualtity": 2,
+                "quantity": 2,
                 "price": 7.16,
                 "currency": "USD",
                 "product": {
                     "code": "cd2",
                     "name": "Capachino",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 4.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 4.99,
                 "currency": "USD",
                 "product": {
                     "code": "cd3",
                     "name": "Muffin",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -98,31 +144,47 @@
     {
         "id": "479",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-02-04T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2015-02-04T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 7.57,
         "items": [
             {
                 "unitPrice": 3.58,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 3.58,
                 "currency": "USD",
                 "product": {
                     "code": "cd2",
                     "name": "Capachino",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 3.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 3.99,
                 "currency": "USD",
                 "product": {
                     "code": "cd3",
                     "name": "Cookie",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -135,53 +197,83 @@
     {
         "id": "547",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-03-14T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2015-03-14T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 23.87,
         "items": [
             {
                 "unitPrice": 12.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 12.99,
                 "currency": "USD",
                 "product": {
                     "code": "1",
                     "name": "Braverages",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 2.45,
-                "qualtity": "2lbs",
-                "price": 4.90,
+                "quantity": "2lbs",
+                "price": 4.9,
                 "currency": "USD",
                 "product": {
                     "code": "2",
                     "name": "Grapes",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 2.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 2.99,
                 "currency": "USD",
                 "product": {
                     "code": "5",
                     "name": "Big Hero 6(BlueRay)",
-                    "catagory": "Entertainment"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 2.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 2.99,
                 "currency": "USD",
                 "product": {
                     "code": "5",
                     "name": "Birdman (BlueRay)",
-                    "catagory": "Entertainment"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -194,31 +286,47 @@
     {
         "id": "647",
         "userId": "rakesh",
-        "timestamp": {"$date":"2015-03-18T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2015-03-18T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 3513,
         "items": [
             {
                 "unitPrice": 1999,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 1999,
                 "currency": "USD",
                 "product": {
                     "code": "3",
                     "name": "Royce Leather Sofa",
-                    "catagory": "Shelter"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 1514,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 1514,
                 "currency": "USD",
                 "product": {
                     "code": "3",
                     "name": "Dining Table Set",
-                    "catagory": "Shelter"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -231,42 +339,65 @@
     {
         "id": "166",
         "userId": "rakesh",
-        "timestamp": {"$date":"2014-06-04T00:00:00.000Z"},
+        "timestamp": {
+            "$date": "2014-06-04T00:00:00.000Z"
+        },
         "serviceType": "Goods",
         "transactionType": "InStore",
         "totalAmount": 29.63,
         "items": [
             {
                 "unitPrice": 19.74,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 19.74,
                 "currency": "USD",
                 "product": {
                     "code": "1",
                     "name": "Bread",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 3.45,
-                "qualtity": 2,
-                "price": 6.90,
+                "quantity": 2,
+                "price": 6.9,
                 "currency": "USD",
                 "product": {
                     "code": "2",
                     "name": "Milk",
-                    "catagory": "Food"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             },
             {
                 "unitPrice": 2.99,
-                "qualtity": 1,
+                "quantity": 1,
                 "price": 2.99,
                 "currency": "USD",
                 "product": {
                     "code": "5",
                     "name": "Shall We Dance(BlueRay)",
-                    "catagory": "Entertainment"
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    }
                 }
             }
         ],
@@ -275,5 +406,56 @@
             "name": "WHOLE FOODS MARKET",
             "location": "WHOLEFDS RES 10061 07037360600"
         }
+    },
+    {
+        "id": "1431404722942",
+        "timestamp": 1431404722943,
+        "transactionType": "InStore",
+        "items": [
+            {
+                "unitPrice": 10.1,
+                "quantity": 1,
+                "price": 10.1,
+                "currency": "USD",
+                "product": {
+                    "name": "name",
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "code": "1431404722943"
+                }
+            },
+            {
+                "unitPrice": 10.1,
+                "quantity": 1,
+                "price": 10.1,
+                "currency": "USD",
+                "product": {
+                    "name": "name",
+                    "category": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "subCatagory": {
+                        "code": "1",
+                        "name": "Food"
+                    },
+                    "code": "1431404722943"
+                }
+            }
+        ],
+        "merchant": {
+            "name": "aaa",
+            "location": "ddd",
+            "code": "1431404722944"
+        },
+        "userId": "rakesh",
+        "serviceType": "Goods",
+        "totalAmount": 100.1
     }
 ]

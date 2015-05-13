@@ -15,7 +15,7 @@
                 "product": {
                     "code": "cd1",
                     "name": "name1",
-                    "catagory": "cat1"
+                    "category": "cat1"
                 }
             },
             {
@@ -26,7 +26,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "name2",
-                    "catagory": "cat2"
+                    "category": "cat2"
                 }
             }
         ],
@@ -52,7 +52,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "name2",
-                    "catagory": "cat2"
+                    "category": "cat2"
                 }
             },
             {
@@ -63,7 +63,7 @@
                 "product": {
                     "code": "cd3",
                     "name": "name3",
-                    "catagory": "cat3"
+                    "category": "cat3"
                 }
             },
             {
@@ -74,7 +74,7 @@
                 "product": {
                     "code": "cd4",
                     "name": "name4",
-                    "catagory": "cat4"
+                    "category": "cat4"
                 }
             }
         ],
@@ -100,7 +100,7 @@
                 "product": {
                     "code": "cd1",
                     "name": "name1",
-                    "catagory": "cat1"
+                    "category": "cat1"
                 }
             },
             {
@@ -111,7 +111,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "name2",
-                    "catagory": "cat2"
+                    "category": "cat2"
                 }
             }
         ],
@@ -137,7 +137,7 @@
                 "product": {
                     "code": "cd1",
                     "name": "name1",
-                    "catagory": "cat1"
+                    "category": "cat1"
                 }
             },
             {
@@ -148,7 +148,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "name2",
-                    "catagory": "cat2"
+                    "category": "cat2"
                 }
             }
         ],
@@ -174,7 +174,7 @@
                 "product": {
                     "code": "cd1",
                     "name": "name1",
-                    "catagory": "cat1"
+                    "category": "cat1"
                 }
             },
             {
@@ -185,7 +185,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "name2",
-                    "catagory": "cat2"
+                    "category": "cat2"
                 }
             }
         ],
@@ -211,7 +211,7 @@
                 "product": {
                     "code": "cd1",
                     "name": "name1",
-                    "catagory": "cat1"
+                    "category": "cat1"
                 }
             },
             {
@@ -222,7 +222,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "Cake",
-                    "catagory": "Bakery"
+                    "category": "Bakery"
                 }
             },
             {
@@ -233,7 +233,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "Bread",
-                    "catagory": "Bakery"
+                    "category": "Bakery"
                 }
             }            
         ],
@@ -259,7 +259,7 @@
                 "product": {
                     "code": "cd5",
                     "name": "Cup Cakes",
-                    "catagory": "Bakery"
+                    "category": "Bakery"
                 }
             },
             {
@@ -270,7 +270,7 @@
                 "product": {
                     "code": "cd2",
                     "name": "Milk",
-                    "catagory": "Beverages"
+                    "category": "Beverages"
                 }
             }            
         ],

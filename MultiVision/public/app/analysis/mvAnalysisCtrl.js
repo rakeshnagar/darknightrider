@@ -10,7 +10,7 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
 
     var transactions;
 
-    mvCachedTransaction.query().$promise.then(function (collection) {         
+    mvCachedTransaction.query().$promise.then(function (collection) {
         $scope.transactions = collection
     });
 
@@ -29,7 +29,7 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
         December: 3240
     };
 
-    $scope.categoryList = 
+    $scope.categoryList =
                             [
                                 {
                                     "id": 1,
@@ -145,7 +145,7 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
                     }
                 ];
 
-$scope.expand = function (id, clickedOn) { 
+$scope.expand = function (id, clickedOn) {
     var months = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     console.log("expand clicked id="+id);
     console.log("expand clicked type="+clickedOn);
@@ -156,7 +156,7 @@ $scope.expand = function (id, clickedOn) {
     var tiles = [];
     var filteredTransactions = [];
     var map = new Map();
-    var year, month, date, catagory;
+    var year, month, date, category;
     var tile;
     // $scope.year=null;
     // $scope.month=null;
@@ -169,15 +169,15 @@ $scope.expand = function (id, clickedOn) {
             "heading": "Root",
             "type": "year",
             "parent": {
-                "heading":"root", 
+                "heading":"root",
                 "type":"root"}
         };
-        
+
         tileGroups.push(tileGroup);
 
         if ($scope.transactions) {
             $scope.transactions.forEach(function(entry) {
-                date = new Date(entry.timestamp);                
+                date = new Date(entry.timestamp);
                 year = date.getFullYear();
 
                 if (map.has(year)) {
@@ -193,7 +193,7 @@ $scope.expand = function (id, clickedOn) {
                             "total": total
                             //"leaf": false
                         };
-                tiles.push(tile);              
+                tiles.push(tile);
             });
         }
 
@@ -202,20 +202,22 @@ $scope.expand = function (id, clickedOn) {
 
     if (clickedOn === "year") {
         $scope.year=id;
-        console.log ("processing year...");        
+        console.log ("processing year...");
         tileGroup = {
             "heading": id,
             "type": "month",
             "parent": {
-                "heading":"root", 
+                "heading":"root",
                 "type":"root"}
         };
-        
+
         tileGroups.push(tileGroup);
 
         if ($scope.transactions) {
 
             $scope.transactions.forEach(function(entry) {
+                // console.log("transaction >>>>>>>>>> " + JSON.stringify(entry));
+
                 date = new Date(entry.timestamp);
 
                  if (date.getFullYear() == id) {
@@ -236,26 +238,26 @@ $scope.expand = function (id, clickedOn) {
                             //"leaf": false
                         };
 
-                tiles.push(tile);                              
+                tiles.push(tile);
             });
         }
 
         tileGroup.tiles = tiles;
-    }    
+    }
 
 
     if (clickedOn === "month") {
-        console.log ("processing month..."); 
+        console.log ("processing month...");
 
         $scope.month=id;
         tileGroup = {
             "heading": id,
-            "type": "catagory",
+            "type": "category",
             "parent": {
-                "heading":$scope.year, 
+                "heading":$scope.year,
                 "type":"year"}
         };
-        
+
         tileGroups.push(tileGroup);
 
         if ($scope.transactions) {
@@ -266,43 +268,45 @@ $scope.expand = function (id, clickedOn) {
 
                  if ((date.getFullYear() == $scope.year) && (month == id)) {
                     entry.items.forEach(function(item) {
-                        catagory = item.product.catagory;
 
-                        if (map.has(catagory)) {
-                            map.set(catagory, (map.get(catagory) + item.price));
+                        // console.log("item >>>>>>>>>> " + JSON.stringify(item));
+                        category = item.product.category.name;
+
+                        if (map.has(category)) {
+                            map.set(category, (map.get(category) + item.price));
                         } else {
-                           map.set(catagory, item.price);
+                           map.set(category, item.price);
                         }
                     });
                 }
              });
 
-            map.forEach(function (total, catagory) {
+            map.forEach(function (total, category) {
                 tile = {
-                            "title": catagory,
+                            "title": category,
                             "total": total
                             //"leaf": false
                         };
 
-                tiles.push(tile);                              
+                tiles.push(tile);
             });
         }
 
         tileGroup.tiles = tiles;
-    } 
+    }
 
-    if (clickedOn === "catagory") {
-        console.log ("processing catagory..."); 
+    if (clickedOn === "category") {
+        console.log ("processing category...");
 
-        $scope.catagory=id;
+        $scope.category=id;
         tileGroup = {
             "heading": id,
             "type": "items",
             "parent": {
-                "heading":$scope.month, 
+                "heading":$scope.month,
                 "type":"month"}
         };
-        
+
         tileGroups.push(tileGroup);
 
         if ($scope.transactions) {
@@ -313,9 +317,10 @@ $scope.expand = function (id, clickedOn) {
 
                  if ((date.getFullYear() == $scope.year) && (month === $scope.month)) {
                     entry.items.forEach(function(item) {
-                        catagory = item.product.catagory;
+                        // console.log(JSON.stringify(item));
+                        category = item.product.category.name;
 
-                    if (catagory === id) {
+                    if (category === id) {
                         tile = {
                             "title": item.product.name,
                             "total": item.price,
@@ -329,20 +334,20 @@ $scope.expand = function (id, clickedOn) {
         }
 
         tileGroup.tiles = tiles;
-    }     
+    }
 
     if (clickedOn === "items") {
-        console.log ("processing item..."); 
+        console.log ("processing item...");
 
         $scope.item=id;
         tileGroup = {
             "heading": id,
             "type": "item",
             "parent": {
-                "heading":$scope.catagory, 
-                "type":"catagory"}
+                "heading":$scope.category,
+                "type":"category"}
         };
-        
+
         tileGroups.push(tileGroup);
 
         if ($scope.transactions) {
@@ -361,16 +366,16 @@ $scope.expand = function (id, clickedOn) {
 
                  if ((date.getFullYear() == $scope.year) && (month === $scope.month)) {
 
-                     entry.items.some(function(item) {                    
-                        if (item.product.catagory === $scope.catagory) {
+                     entry.items.some(function(item) {
+                        if (item.product.category.name === $scope.category) {
                             filteredTransactions.push(entry);
                             return true;
                         }
                         });
                     // entry.items.forEach(function(item) {
-                    //     catagory = item.product.catagory;
+                    //     category = item.product.category;
 
-                    //     if (catagory === $scope.catagory) {
+                    //     if (category === $scope.category) {
                     //         transactions.push(entry);
                     //     }
                     // });
@@ -383,13 +388,13 @@ $scope.expand = function (id, clickedOn) {
         }
 
         tileGroup.tiles = tiles;
-    }     
+    }
 
 
     console.log(JSON.stringify(tileGroups));
 
     $scope.tiles = tileGroups;
 
-}               
+}
 
 });

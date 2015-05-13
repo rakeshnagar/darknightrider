@@ -10,17 +10,24 @@ var transactionSchema = mongoose.Schema({
         location: {type: String, required: '{PATH} is required!'}
     },
     serviceType: {type: String, required: '{PATH} is required!'},
-    transactionType: {type: String, required: '{PATH} is required!'},    
+    transactionType: {type: String, required: '{PATH} is required!'},
     totalAmount: {type: Number, required: '{PATH} is required!'},
     items: [{ product: {
-                    code: {type: String, required: '{PATH} is required!'},
-                    name: {type: String, required: '{PATH} is required!'},
-                    catagory: {type: String, required: '{PATH} is required!'}
-                },
-               unitPrice: {type: Number, required: '{PATH} is required!'},
-               qualtity: {type: Number, required: '{PATH} is required!'},
-               price: {type: Number, required: '{PATH} is required!'},
-               currency: {type: String, required: '{PATH} is required!'}
+                          code: {type: String, required: '{PATH} is required!'},
+                          name: {type: String, required: '{PATH} is required!'},
+                          category: {
+                            code: {type: String, required: '{PATH} is required!'},
+                            name: {type: String, required: '{PATH} is required!'}
+                          },
+                          subCategory: {
+                            code: {type: String, required: '{PATH} is required!'},
+                            name: {type: String, required: '{PATH} is required!'}
+                          }
+                      },
+                   unitPrice: {type: Number, required: '{PATH} is required!'},
+                   qualtity: {type: Number, required: '{PATH} is required!'},
+                   price: {type: Number, required: '{PATH} is required!'},
+                   currency: {type: String, required: '{PATH} is required!'}
     }]
 });
 
@@ -34,9 +41,9 @@ function createDefaultTransactions() {
         console.log('Inside createDefaultTransactions...' + err);
 
       //  if (collection.length === 0) {
-        
+
             console.log('Inside createDefaultTransactions... adding');
-            
+
             var transaction = new Transaction(
                 {
                    "id":"id1",
@@ -55,7 +62,14 @@ function createDefaultTransactions() {
                          "product":{
                             "code":"cd1",
                             "name":"name1",
-                            "catagory":"cat1"
+                            "category": {
+                                "code": "1",
+                                "name": "Food"
+                            },
+                            "subCatagory": {
+                                "code": "1",
+                                "name": "Food"
+                            },
                          },
                          "unitPrice":10,
                          "qualtity":3,
@@ -66,7 +80,14 @@ function createDefaultTransactions() {
                          "product":{
                             "code":"cd2",
                             "name":"name2",
-                            "catagory":"cat2"
+                            "category": {
+                                "code": "1",
+                                "name": "Food"
+                            },
+                            "subCatagory": {
+                                "code": "1",
+                                "name": "Food"
+                            },
                          },
                          "unitPrice":20,
                          "qualtity":1,
@@ -77,9 +98,9 @@ function createDefaultTransactions() {
                 });
 
             transaction.save(function (err) {
-                console.log(err);                                
+                console.log(err);
             });
-            
+
         console.log('Inside createDefaultTransactions... adding - done');
 
        // }
