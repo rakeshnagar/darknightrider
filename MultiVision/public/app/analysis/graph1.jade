@@ -1,13 +1,16 @@
 .container.top-padding-med.bottom-padding-med
     div
-        span hello
-    linear-chart(chart-data="salesData")
+    div.angular_graph(ng-controller="mvAnalysisGraphCtrl")
+      div.angular_x {{xAxis}}
+      div.angular_y {{yAxis}}
+      div.dot(ng-repeat="point in points" style="bottom:calc({{point.xValue}}/{{maxX}}*100% - 15px); left:calc({{point.yValue}}/{{maxY}}*100% - 15px);" data-title="{{point.label}}: {{point.xValue}}, {{point.yValue}}")
 
-    div(id="d3-bars" bar-height="20" bar-padding="5")
+    linear-chart(chart-data="salesData")
 
     d3-bars(data="data" bar-height="20" bar-padding="5")
 
-    bars(data="40,4,55,15,16,33,52,20,4")
+    bars(data="A:40,B:4,C:55,D:15")
+    bars(data="January:68.2517677589508,Feburary:13.881504148369178,March:14.80183770852793,April:3.064890384152088")
 
     div(id='viz')
     script(type="text/javascript").

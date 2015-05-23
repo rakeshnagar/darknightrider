@@ -135,8 +135,6 @@ angular.module('app').controller("mvAnalysisGraphCtrl", ["$scope", function($sco
             if ($scope.points[i].yValue > $scope.maxY)
             $scope.maxY = $scope.points[i].yValue;
         }
-
-
 }]);
 
 angular.module('app').directive('linearChart', function($window){
@@ -319,15 +317,18 @@ angular.module('app').directive('bars', function ($parse) {
          replace: true,
          template: '<div id="chart1"></div>',
          link: function (scope, element, attrs) {
-           var data = attrs.data.split(','),
-           chart = d3.select('#chart1')
+           var data = attrs.data.split(',');
+                      
+           var chart = d3.select('#chart1')
              .append("div").attr("class", "chart")
              .selectAll('div')
              .data(data).enter()
              .append("div")
              .transition().ease("elastic")
-             .style("width", function(d) { return d + "%"; })
-             .text(function(d) { return d + "%"; });
+             //.style("width", function(d) { return (d.split(':')[1]) + "%"; })
+             //.attr("style", "text-align: left; width: 55%")
+             .attr("style", function(d) { return "text-align: left; width:" + (Math.round(d.split(':')[1])) + "%"; })
+             .text(function(d) { return d.split(':')[0] + " ("+Math.round(d.split(':')[1])+"%)"; });
          } 
       };
    });
@@ -983,11 +984,11 @@ angular.module('app').directive('sunburst', function ($parse) {
           }
           };
 
-          alert('before loading...');
+          //alert('before loading...');
           // Use d3.text and d3.csv.parseRows so that we do not need to have a header
           // row, and can receive the csv as an array of arrays.
           d3.text("http://paulbhartzog.org/codepen/visit-sequences.txt", function(text) {
-            alert('loading...');
+            //alert('loading...');
             console.log('loading...');
             var csv = d3.csv.parseRows(text);
             var json = renderingServices.buildHierarchy(csv);

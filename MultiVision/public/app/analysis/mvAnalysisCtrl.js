@@ -128,6 +128,7 @@ angular.module('app').controller('mvAnalysisCtrl', function($scope, mvCachedTran
                             ];
 
 
+    //$scope.chartdata="2015:40,2014:14,2013:55";
     $scope.tiles = [
                     {
                         "heading": "Root",
@@ -155,6 +156,7 @@ $scope.expand = function (id, clickedOn) {
     console.log("expand clicked type="+clickedOn);
 
     //console.log("transactions >>>>>>>> " + $scope.transactions);
+    var chartdata;
     var tileGroup;
     var tileGroups = [];
     var tiles = [];
@@ -397,8 +399,27 @@ $scope.expand = function (id, clickedOn) {
 
     console.log(JSON.stringify(tileGroups));
 
+    console.log(JSON.stringify(tileGroups[0].tiles));
+    // alert(chartdata);
+    // $scope.chartdata=chartdata;
     $scope.tiles = tileGroups;
 
-}
+    var grandTotal=0;
+    $scope.tiles[0].tiles.forEach(function(entry) {
+        console.log(JSON.stringify(entry));
+        grandTotal += entry.total;
+    });
 
+    console.log(grandTotal);
+
+    chartdata="";
+    $scope.tiles[0].tiles.forEach(function(entry) {
+        chartdata += (entry.title +":" +(entry.total * 100/grandTotal)) +",";
+        //console.log (entry.title +":" +(entry.total * 100/grandTotal));
+    });
+
+    chartdata = chartdata.substring(0, chartdata.length-1);
+    console.log ("chartdata = " + chartdata);
+    $scope.chartdata=chartdata;
+}
 });

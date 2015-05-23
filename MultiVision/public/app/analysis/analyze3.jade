@@ -1,17 +1,17 @@
 .container.top-padding-med.bottom-padding-med    
 
-.container.top-padding-med.bottom-padding-med(style="width: 640px;", ng-repeat="tilex in tiles")    
-    div.label.bg-darkCobalt(style="width: 640px;") 
+.container.top-padding-med.bottom-padding-med(ng-repeat="tilex in tiles")    
+    div.label.bg-darkCobalt
         a.fg-white(href="", ng-click="expand(tilex.parent.heading, tilex.parent.type)") Back            
-    div.label.bg-darkCobalt(style="width: 640px;") {{tilex.heading}}
-    div.tile-container.bg-darkCobalt(style="width: 640px")    
-        div.tile.fg-white(ng-class-odd="'bg-cyan'", ng-class-even="'bg-orange'", data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
+    div.margin-left-med.label.fg-black {{tilex.heading}}        
+    div.tile-container.bg-darkCobalt
+        div.tile-wide.fg-white(ng-class-odd="'bg-cyan'", ng-class-even="'bg-orange'", data-role="tile", ng-repeat="tiley in tilex.tiles", ng-click="expand(tiley.title, tilex.type)")
             div(style="overflow:hidden;  text-align: center; width: 100%; height: 50%; display: table;")
                 span.label(style="overflow:hidden;  display: table-cell; vertical-align:bottom;") {{tiley.title}}
             div(style="overflow:hidden;  text-align: center;")
                 span.badge.bg-red (${{tiley.total | number : 2}})
 
-    div.tile-container.bg-lighterGrey(ng-show="tilex.type == 'item'", style="width: 640px")    
+    div.tile-container.bg-lighterGrey(ng-show="tilex.type == 'item'")    
         div(ng-repeat="tx  in filteredTransactions")            
             p.top-padding-med.sub-alt-header {{tx.merchant.name}}, {{tx.merchant.location}}
             p.bg-info {{tx.timestamp |  date:'dd-MMMM-yyyy, h:mm:ss a'}}
@@ -34,3 +34,5 @@
                             td.col-md-6 
                             td.col-md-6 Total:
                             td.col-md-6 {{tx.totalAmount | number : 2}}
+    div.tile-container.bg-lighterGrey                            
+        bars(data="{{chartdata}}")                           

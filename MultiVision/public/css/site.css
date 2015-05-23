@@ -142,3 +142,64 @@ footer p {
 #sunburst_percentage {
   font-size: 2.5em;
 }
+.angular_graph {
+  position: relative;
+  margin: 50px auto;
+  width: 40%;
+  height: 250px;
+  background: #d9f2e6;
+}
+.angular_x {
+  font-weight: bold;
+  border-bottom: 1px solid #71cbd0;
+  position: absolute;
+  width: 250px;
+  text-align: center;
+  padding: 10px;
+  transform: rotate(-90deg);
+  transform-origin: bottom left;
+  bottom: 0;
+  color: #d07371;
+}
+.angular_y {
+  font-weight: bold;
+  border-top: 1px solid #71cbd0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  top: 100%;
+  color: #d07371;
+}
+.dot {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: #71cbd0;
+  cursor: pointer;
+  animation: dots 1.5s ease;
+}
+.dot:after {
+  content: attr(data-title);
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  background: #d07371;
+  color: #fff;
+  position: absolute;
+  padding: 10px;
+  left: 150%;
+  top: -15px;
+  width: 0;
+  opacity: 0;
+  border-radius: 3px;
+}
+.dot:hover {
+  background: #d07371;
+}
+.dot:hover:after {
+  width: auto;
+  opacity: 1;
+  z-index: 9999;
+}
