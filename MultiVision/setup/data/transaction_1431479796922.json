@@ -146,7 +146,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -311,7 +311,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -740,7 +740,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -773,7 +773,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -1367,7 +1367,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -2126,7 +2126,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -2258,7 +2258,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -2555,7 +2555,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -3644,7 +3644,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -3677,7 +3677,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -3710,7 +3710,7 @@
         "code" : "5"
       },
       "subCategory" : {
-        "name" : " DIGITAL ",
+        "name" : "DIGITAL",
         "parentCategoryCode" : "5",
         "code" : "10"
       },
@@ -6086,7 +6086,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -6152,7 +6152,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -6317,7 +6317,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -7109,7 +7109,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -7274,7 +7274,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -7307,7 +7307,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -8231,7 +8231,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -8363,7 +8363,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -10013,7 +10013,7 @@
         "code" : "3"
       },
       "subCategory" : {
-        "name" : "D�cor",
+        "name" : "Di'cor",
         "parentCategoryCode" : "3",
         "code" : "20"
       },
@@ -10376,7 +10376,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -10508,7 +10508,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -13643,7 +13643,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -13742,7 +13742,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
@@ -14171,7 +14171,7 @@
         "code" : "4"
       },
       "subCategory" : {
-        "name" : " BOOK STORES ",
+        "name" : "BOOK STORES",
         "parentCategoryCode" : "4",
         "code" : "9"
       },
