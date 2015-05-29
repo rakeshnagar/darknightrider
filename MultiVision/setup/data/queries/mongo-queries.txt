@@ -352,11 +352,367 @@ db.transactions.aggregate([
   { $unwind : '$subCat'},
   { $unwind : '$itemPrice'},  
   { $group: {
-        _id: {year: '$year', category: '$merchantName'},
+        _id: {year: '$year', merchantName: '$merchantName'},
       total: {$sum: '$itemPrice'},
-    average: {$avg: '$itemPrice'},
+    //average: {$avg: '$itemPrice'},
       count: {$sum: 1 }
   }
   }
+  ]
+)
+
+/*
+    All Categories
+*/
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        //year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        //merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/*
+    All Sub Categories
+*/
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        //year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        //merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {subCategory: '$subCat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/*
+    All Merchant
+*/
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        //year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        merchantName: '$merchant.name',        
+        // cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  // { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {merchantName: '$merchantName'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/*
+    Categories by year
+*/
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        //merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {year: '$year', category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "_id.year" : 1, "total" : -1} }
+  ]
+)
+
+
+
+/* QUERIES */
+1   All transactions, pivot by Category
+2   All transactions, pivot by Store
+3   <year> transactions, pivot by Category
+4   <year> transactions, pivot by Store
+5   <year> <month> transactions, pivot by Category
+6   <year> <month> transactions, pivot by Store
+7   <year> <month> <day> transactions, pivot by Category  
+8   <year> <month> <day> transactions, pivot by Store  
+
+/* query 1: All transactions, pivot by Category */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        //year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        // merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/* query 2: All transactions, pivot by Store */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        //year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        merchantName: '$merchant.name',        
+        // cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  // { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $group: {
+        _id: {merchantName: '$merchantName'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/* query 3: <year> transactions, pivot by Category. year = 2014 */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        // merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $group: {
+        _id: {category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/* query 4: <year> transactions, pivot by Store. year = 2014 */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        //month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        merchantName: '$merchant.name',        
+        // cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  // { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $group: {
+        _id: {merchantName: '$merchantName'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/* query 5: <year> <month> transactions, pivot by Category. year = 2014, month = 2 */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        // merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $match: {"month" : 2} },
+  { $group: {
+        _id: {category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+/* query 6: <year> <month> transactions, pivot by Store. year = 2014, month=2 */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        month: { $month: "$timestamp" },
+        //day: { $dayOfMonth: "$timestamp" },
+        merchantName: '$merchant.name',        
+        // cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  // { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $match: {"month" : 2} },
+  { $group: {
+        _id: {merchantName: '$merchantName'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "total" : -1} }
+  ]
+)
+
+
+/* query 7: <year> <month> <day> transactions, pivot by Category. year = 2014, month=2 */
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        month: { $month: "$timestamp" },
+        day: { $dayOfMonth: "$timestamp" },
+        // merchantName: '$merchant.name',        
+        cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $match: {"month" : 2} },
+  { $group: {
+        _id: {year: '$year', month: '$month', day: '$day', category: '$cat'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "_id.day" : 1} }
+  ]
+)
+
+/* query 8: <year> <month> <day> transactions, pivot by Store. year = 2014, month=2 */
+//http://stackoverflow.com/questions/21124987/mongodb-aggregation-framework-can-sum-result-be-used-in-push
+
+db.transactions.aggregate([
+  { $project: {
+        id:1,
+        userId:1,
+        year: { $year: "$timestamp" },
+        month: { $month: "$timestamp" },
+        day: { $dayOfMonth: "$timestamp" },
+        merchantName: '$merchant.name',        
+        // cat: '$items.product.category.name',
+        // subCat: '$items.product.subCategory.name',
+        itemPrice: '$items.price'
+  }},
+  // { $unwind : '$cat'},
+  // { $unwind : '$subCat'},
+  { $unwind : '$itemPrice'},  
+  { $match: {"year" : 2014} },
+  { $match: {"month" : 2} },
+  { $group: {
+        _id: {year: '$year', month: '$month', day: '$day', merchantName: '$merchantName'},
+      total: {$sum: '$itemPrice'},    
+      count: {$sum: 1 }
+  }
+  },
+  { $sort : { "_id.day" : 1} }
   ]
 )
