@@ -1,0 +1,596 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ca",
+				"Categories"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"a",
+				"attr"
+			],
+			[
+				"c",
+				"console"
+			],
+			[
+				"Ma",
+				"May"
+			],
+			[
+				"ap",
+				"April"
+			],
+			[
+				"yea",
+				"yearValue"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/app/analysis/mvAnalysisGraphCtrl.js",
+			"settings":
+			{
+				"buffer_size": 32837,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/app/analysis/graph1.jade",
+			"settings":
+			{
+				"buffer_size": 1528,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/css/site.styl",
+			"settings":
+			{
+				"buffer_size": 3831,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/app/analysis/mvAnalysisCtrl.js",
+			"settings":
+			{
+				"buffer_size": 15326,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/app/analysis/analyze3.jade",
+			"settings":
+			{
+				"buffer_size": 2115,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "setup/data/transaction_1431479796922.json",
+			"settings":
+			{
+				"buffer_size": 358845,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "setup/data/queries/mongo-queries.txt",
+			"settings":
+			{
+				"buffer_size": 19255,
+				"line_ending": "Windows",
+				"name": "db.presentations.aggregate("
+			}
+		},
+		{
+			"file": "server/models/TransactionRollup.js",
+			"settings":
+			{
+				"buffer_size": 519,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server/models/Transaction.js",
+			"settings":
+			{
+				"buffer_size": 4355,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"format",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"forma",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"case",
+				"Convert Case: Upper Case"
+			],
+			[
+				"js",
+				"Pretty JSON: JSON query with ./jq"
+			],
+			[
+				"new",
+				"Pretty JSON: JSON query with ./jq"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Transaction.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/css/site.styl",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/views/index.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/account/navbar-login.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/app.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze2.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysisCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourseListCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourseDetailsCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourse.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/setup/data/transactions.json",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvTransaction.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/User.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/courses.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCachedCourse.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/users.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Category.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/express.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/transactions.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/routes.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze3.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/admin/mvUserListCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvCachedTransaction.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/account/mvSignupCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/package.json",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/scripts.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysisGraphCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/require-config.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/d3-server.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/graph1.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/graphs/mvD3.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/layout.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/vendor/metro/build/css/metro.css",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/node_modules/d3/d3.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Course.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/mongoose.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/course-list.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/views/newuser.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/routes/users.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/routes/index.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/app.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/views/userlist.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/package.json",
+		"/C/Users/rnagar/AppData/Local/GitHub/PortableGit_c2ba306e536fdf878271f7fe636a147ff37326ad/bin/vi"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"transaction",
+			"chart",
+			"left",
+			"tile-container",
+			"95",
+			"950",
+			"640p",
+			".tile",
+			"tile",
+			"alert",
+			"console",
+			"catagory",
+			"category",
+			"\"title\"",
+			"category",
+			"lineChart",
+			"\"datapoint\"",
+			"alert",
+			"chart",
+			"crossfilter",
+			"crossfilter.geo.projection",
+			"data1",
+			"setChartParameters",
+			"d3Service",
+			"data",
+			"linear-chart",
+			"d3-bars",
+			"app",
+			"leaf",
+			"\"total\"",
+			"mvTransaction",
+			"bg-cyan",
+			"\n        "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/app/analysis/mvAnalysisGraphCtrl.js",
+					"settings":
+					{
+						"buffer_size": 32837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 10199.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "public/app/analysis/graph1.jade",
+					"settings":
+					{
+						"buffer_size": 1528,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "public/css/site.styl",
+					"settings":
+					{
+						"buffer_size": 3831,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								829
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/app/analysis/mvAnalysisCtrl.js",
+					"settings":
+					{
+						"buffer_size": 15326,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5620.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/app/analysis/analyze3.jade",
+					"settings":
+					{
+						"buffer_size": 2115,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "setup/data/transaction_1431479796922.json",
+					"settings":
+					{
+						"buffer_size": 358845,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								782,
+								785
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "setup/data/queries/mongo-queries.txt",
+					"settings":
+					{
+						"buffer_size": 19255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18373,
+								18373
+							]
+						],
+						"settings":
+						{
+							"auto_name": "db.presentations.aggregate(",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12913.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "server/models/TransactionRollup.js",
+					"settings":
+					{
+						"buffer_size": 519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								519,
+								519
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "server/models/Transaction.js",
+					"settings":
+					{
+						"buffer_size": 4355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1669,
+								1669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.0605264422057,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 442.0,
+	"status_bar_visible": true
+}

@@ -490,6 +490,7 @@ db.transactions.aggregate([
 8   <year> <month> <day> transactions, pivot by Store  
 
 /* query 1: All transactions, pivot by Category */
+// { "total" : 14196.64, "count" : 106, "name" : "Shelter", "type" : "category" }
 
 db.transactions.aggregate([
   { $project: {
@@ -507,16 +508,18 @@ db.transactions.aggregate([
   // { $unwind : '$subCat'},
   { $unwind : '$itemPrice'},  
   { $group: {
-        _id: {category: '$cat'},
+        _id: {name: '$cat'},      
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"category"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 /* query 2: All transactions, pivot by Store */
+// { "total" : 6704.15, "count" : 7, "name" : "SONY", "type" : "merchant" }
 
 db.transactions.aggregate([
   { $project: {
@@ -534,16 +537,18 @@ db.transactions.aggregate([
   // { $unwind : '$subCat'},
   { $unwind : '$itemPrice'},  
   { $group: {
-        _id: {merchantName: '$merchantName'},
+        _id: {name: '$merchantName'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"merchant"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 /* query 3: <year> transactions, pivot by Category. year = 2014 */
+// { "total" : 9867.900000000001, "count" : 64, "name" : "Shelter", "type" : "category" }
 
 db.transactions.aggregate([
   { $project: {
@@ -562,16 +567,18 @@ db.transactions.aggregate([
   { $unwind : '$itemPrice'},  
   { $match: {"year" : 2014} },
   { $group: {
-        _id: {category: '$cat'},
+        _id: {name: '$cat'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"category"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 /* query 4: <year> transactions, pivot by Store. year = 2014 */
+// { "total" : 6313.1, "count" : 3, "name" : "HUGO BOSS", "type" : "merchant" }
 
 db.transactions.aggregate([
   { $project: {
@@ -590,16 +597,18 @@ db.transactions.aggregate([
   { $unwind : '$itemPrice'},  
   { $match: {"year" : 2014} },
   { $group: {
-        _id: {merchantName: '$merchantName'},
+        _id: {name: '$merchantName'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"merchant"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 /* query 5: <year> <month> transactions, pivot by Category. year = 2014, month = 2 */
+// { "total" : 289.58000000000004, "count" : 5, "name" : "Shelter", "type" : "category" }
 
 db.transactions.aggregate([
   { $project: {
@@ -619,16 +628,18 @@ db.transactions.aggregate([
   { $match: {"year" : 2014} },
   { $match: {"month" : 2} },
   { $group: {
-        _id: {category: '$cat'},
+        _id: {name: '$cat'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"category"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 /* query 6: <year> <month> transactions, pivot by Store. year = 2014, month=2 */
+// { "total" : 250, "count" : 2, "name" : "IASA GLOBAL", "type" : "merchant" }
 
 db.transactions.aggregate([
   { $project: {
@@ -648,17 +659,19 @@ db.transactions.aggregate([
   { $match: {"year" : 2014} },
   { $match: {"month" : 2} },
   { $group: {
-        _id: {merchantName: '$merchantName'},
+        _id: {name: '$merchantName'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
+  { $project: {_id:0, name: '$_id.name', total:1, count:1, type:{$literal:"merchant"}}},
   { $sort : { "total" : -1} }
   ]
 )
 
 
 /* query 7: <year> <month> <day> transactions, pivot by Category. year = 2014, month=2 */
+// { "total" : 54.45, "count" : 1, "year" : 2014, "month" : 2, "day" : 1, "name" : "Shelter", "type" : "category" }
 
 db.transactions.aggregate([
   { $project: {
@@ -678,17 +691,19 @@ db.transactions.aggregate([
   { $match: {"year" : 2014} },
   { $match: {"month" : 2} },
   { $group: {
-        _id: {year: '$year', month: '$month', day: '$day', category: '$cat'},
+        _id: {year: '$year', month: '$month', day: '$day', name: '$cat'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
-  { $sort : { "_id.day" : 1} }
+  { $project: {_id:0, year:"$_id.year", month:"$_id.month", day:"$_id.day", name: '$_id.name', total:1, count:1, type:{$literal:"category"}}},
+  { $sort : { "day" : 1} }
   ]
 )
 
 /* query 8: <year> <month> <day> transactions, pivot by Store. year = 2014, month=2 */
 //http://stackoverflow.com/questions/21124987/mongodb-aggregation-framework-can-sum-result-be-used-in-push
+// { "total" : 54.45, "count" : 1, "year" : 2014, "month" : 2, "day" : 1, "name" : "SUN REFINING & MARKETTING", "type" : "merchant" }
 
 db.transactions.aggregate([
   { $project: {
@@ -708,11 +723,12 @@ db.transactions.aggregate([
   { $match: {"year" : 2014} },
   { $match: {"month" : 2} },
   { $group: {
-        _id: {year: '$year', month: '$month', day: '$day', merchantName: '$merchantName'},
+        _id: {year: '$year', month: '$month', day: '$day', name: '$merchantName'},
       total: {$sum: '$itemPrice'},    
       count: {$sum: 1 }
   }
   },
-  { $sort : { "_id.day" : 1} }
+  { $project: {_id:0, year:"$_id.year", month:"$_id.month", day:"$_id.day", name: '$_id.name', total:1, count:1, type:{$literal:"merchant"}}},
+  { $sort : { "day" : 1} }
   ]
 )
