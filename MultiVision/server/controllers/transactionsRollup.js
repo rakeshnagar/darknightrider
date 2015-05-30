@@ -4,6 +4,12 @@
 	Merchant -> Year -> Month -> (Category + Product)
 	Category -> Year -> Month -> Product
 
+	http://localhost:3030/api/transactionsrollup/category
+	http://localhost:3030/api/transactionsrollup/category/2014
+	http://localhost:3030/api/transactionsrollup/category/2014/7
+	http://localhost:3030/api/transactionsrollup/merchant
+	http://localhost:3030/api/transactionsrollup/merchant/2013
+	http://localhost:3030/api/transactionsrollup/merchant/2014/7
 */
 var TransactionsRollup = require('mongoose').model('TransactionsRollup');
 var Transaction = require('mongoose').model('Transaction');
