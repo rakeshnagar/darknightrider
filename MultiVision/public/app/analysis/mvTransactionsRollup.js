@@ -1,8 +1,15 @@
-angular.module('app').factory('mvTransactionsRollup', function ($resource) {
+// app.get('/api/transactionsrollup/:type', transactionsRollup.getTransactionsRollup);
+// app.get('/api/transactionsrollup/:type/:year', transactionsRollup.getTransactionsRollupByYear);
+// app.get('/api/transactionsrollup/:type/:year/:month', transactionsRollup.getTransactionsRollupByMonth);    
 
-    var TransactionsRollupResource = $resource('/api/transactionsrollup/:_id', {id: "@id"}, {
-        update: {method: 'PUT', isArray: false}
-    });
+angular.module('app').factory('mvTransactionsRollupByType', function ($resource) {
+    return $resource('/api/transactionsrollup/:type', {type: "@type"});
+});
 
-    return TransactionsRollupResource;
+angular.module('app').factory('mvTransactionsRollupByTypeYear', function ($resource) {
+    return $resource('/api/transactionsrollup/:type/:year', {type: "@type", year: "@year"});
+});
+
+angular.module('app').factory('mvTransactionsRollupByTypeYearMonth', function ($resource) {
+    return $resource('/api/transactionsrollup/:type/:year/:month', {type: "@type", year: "@year", month: "@month"});
 });

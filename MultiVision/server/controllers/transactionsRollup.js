@@ -44,6 +44,7 @@ var getTransactionsRollup = function (req, res) {
             console.log(err);
             return;
         }
+        console.log ("result.length = " + result.length);
         res.send(result);
     });
 };
