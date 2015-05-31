@@ -53,6 +53,8 @@ angular.module('app').config(function ($routeProvider, $locationProvider) {
             controller: 'mvAnalysisCtrl'})
         .when('/analyze3', {templateUrl: '/partials/analysis/analyze3',
             controller: 'mvAnalysisCtrl'})
+        .when('/analyze4', {templateUrl: '/partials/analysis/analyze4',
+            controller: 'mvAnalysis4Ctrl'})       
         .when('/graph1', {templateUrl: '/partials/analysis/graph1',
             controller: 'mvAnalysisGraphCtrl'})
         .when('/courses/:id', {templateUrl: '/partials/courses/course-details',
