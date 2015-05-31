@@ -1,18 +1,24 @@
 .container
-    .div Month = {{month}}
-    .div Year = {{year}}
+    .button(ng-click="getDataAndConfirm()") getDataAndConfirm
+    div Month = {{month}}
+    div Year = {{year}}
+    div(id="chart123")
+    div(id="piechart123")
+    .button(ng-click="showPieChart()") Refresh Pie Chart
+    div(id="donutchart123")
+    .button(ng-click="showChart()") Show Chart
     h1 transactionsRollupByCategory
-    .div {{transactionsRollupByCategory}}
+    .container {{transactionsRollupByCategory}}
     h1 transactionsRollupByMerchant        
-    .div {{transactionsRollupByMerchant}}
+    .container {{transactionsRollupByMerchant}}
     h1 transactionsRollupByCategoryYear        
-    .div {{transactionsRollupByCategoryYear}}
+    .container {{transactionsRollupByCategoryYear}}
     h1 transactionsRollupByMerchantYear        
-    .div {{transactionsRollupByMerchantYear}}
+    .container {{transactionsRollupByMerchantYear}}
     h1 transactionsRollupByCategoryYearMonth        
-    .div {{transactionsRollupByCategoryYearMonth}}
+    .container {{transactionsRollupByCategoryYearMonth}}
     h1 transactionsRollupByMerchantYearMonth        
-    .div {{transactionsRollupByMerchantYearMonth}}
+    .container {{transactionsRollupByMerchantYearMonth}}
 
     
     
