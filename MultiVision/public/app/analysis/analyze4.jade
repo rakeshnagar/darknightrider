@@ -1,24 +1,29 @@
-.container
-    .button(ng-click="getDataAndConfirm()") getDataAndConfirm
-    div Month = {{month}}
-    div Year = {{year}}
-    div(id="chart123")
-    div(id="piechart123")
-    .button(ng-click="showPieChart()") Refresh Pie Chart
-    div(id="donutchart123")
-    .button(ng-click="showChart()") Show Chart
-    h1 transactionsRollupByCategory
-    .container {{transactionsRollupByCategory}}
-    h1 transactionsRollupByMerchant        
-    .container {{transactionsRollupByMerchant}}
-    h1 transactionsRollupByCategoryYear        
-    .container {{transactionsRollupByCategoryYear}}
-    h1 transactionsRollupByMerchantYear        
-    .container {{transactionsRollupByMerchantYear}}
-    h1 transactionsRollupByCategoryYearMonth        
-    .container {{transactionsRollupByCategoryYearMonth}}
-    h1 transactionsRollupByMerchantYearMonth        
-    .container {{transactionsRollupByMerchantYearMonth}}
-
-    
-    
+.container-fluid.top-padding-med
+    .row
+        .col-md-4
+            .row
+                .col-md-12
+                    .btn-group.margin-left-med(data-toggle="buttons")
+                        label.btn.btn-info.active(ng-click="updateCharts('category')") By Categories
+                            input(type="radio")
+                        label.btn.btn-info(ng-click="updateCharts('merchant')") By Top Stores
+                            input(type="radio")            
+                    .btn-group.margin-left-med(data-toggle="buttons")
+                        label.btn.btn-info.active(ng-click="updateChartsForYear(0)") All
+                            input(type="radio")                
+                        label.btn.btn-info(ng-click="updateChartsForYear(2013)") 2013
+                            input(type="radio")                
+                        label.btn.btn-info(ng-click="updateChartsForYear(2014)") 2014
+                            input(type="radio")
+                        label.btn.btn-info(ng-click="updateChartsForYear(2015)") 2015
+                            input(type="radio")
+            .row                                
+                .col-md-12
+                    div(id="donutchart123")
+            .row                                
+                .col-md-12
+                    div(id="piechart123")
+        .col-md-8
+            .row
+                .col-md-12
+                    #viz
