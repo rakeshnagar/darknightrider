@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"pro",
+				"promise"
+			],
+			[
+				"v",
+				"value"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"r",
+				"result"
+			],
+			[
 				"ca",
 				"Categories"
 			],
@@ -36,18 +52,18 @@
 	"buffers":
 	[
 		{
-			"file": "public/app/analysis/mvAnalysisGraphCtrl.js",
+			"file": "public/app/analysis/analyze4.jade",
 			"settings":
 			{
-				"buffer_size": 32837,
+				"buffer_size": 1442,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "public/app/analysis/graph1.jade",
+			"file": "public/app/analysis/mvAnalysis4Ctrl.js",
 			"settings":
 			{
-				"buffer_size": 1528,
+				"buffer_size": 13212,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,56 +71,7 @@
 			"file": "public/css/site.styl",
 			"settings":
 			{
-				"buffer_size": 3831,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/app/analysis/mvAnalysisCtrl.js",
-			"settings":
-			{
-				"buffer_size": 15326,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "public/app/analysis/analyze3.jade",
-			"settings":
-			{
-				"buffer_size": 2115,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "setup/data/transaction_1431479796922.json",
-			"settings":
-			{
-				"buffer_size": 358845,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "setup/data/queries/mongo-queries.txt",
-			"settings":
-			{
-				"buffer_size": 19255,
-				"line_ending": "Windows",
-				"name": "db.presentations.aggregate("
-			}
-		},
-		{
-			"file": "server/models/TransactionRollup.js",
-			"settings":
-			{
-				"buffer_size": 519,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server/models/Transaction.js",
-			"settings":
-			{
-				"buffer_size": 4355,
+				"buffer_size": 4054,
 				"line_ending": "Windows"
 			}
 		}
@@ -153,42 +120,54 @@
 	},
 	"file_history":
 	[
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Transaction.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/css/site.styl",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/views/index.jade",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/account/navbar-login.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysis4Ctrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/css/site.styl",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/routes.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/transactionsRollup.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvTransactionsRollup.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/app.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze2.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/package.json",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/bower.json",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysisCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze4.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/css/bootstrap.css",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/layout.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/scripts.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/node_modules/d3/src/compat/style.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/vendor/request/request.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/setup/data/queries/mongo-queries.txt",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/TransactionsRollup.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Transaction.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/transactions.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvTransaction.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvCachedTransactionsRollup.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/mongoose.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysisGraphCtrl.js",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/graph1.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze3.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/setup/data/transaction_1431479796922.json",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/account/navbar-login.jade",
+		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze2.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourseListCtrl.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourseDetailsCtrl.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCourse.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/setup/data/transactions.json",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvTransaction.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/User.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/courses.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/mvCachedCourse.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/users.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Category.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/express.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/controllers/transactions.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/routes.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/analyze3.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/admin/mvUserListCtrl.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvCachedTransaction.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/account/mvSignupCtrl.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/package.json",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/scripts.jade",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/mvAnalysisGraphCtrl.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/require-config.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/d3-server.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/analysis/graph1.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/graphs/mvD3.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/includes/layout.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/vendor/metro/build/css/metro.css",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/node_modules/d3/d3.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/models/Course.js",
-		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/server/config/mongoose.js",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/WebstormProjects/darknightrider-branches/mymoneybuddy/MultiVision/public/app/courses/course-list.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/views/newuser.jade",
 		"/C/X-DRIVE/Enrichments/Projects/Incubation/darknightrider/scratch-1/app1/routes/users.js",
@@ -204,7 +183,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -214,6 +193,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"left",
+			"lest",
+			"5",
+			"top",
+			"forEach",
+			"tempColor",
+			"chart2",
+			"buttons",
+			"updateChartsForYear",
+			"nav",
+			"metro",
+			"round",
+			"padding-top",
+			"group",
+			"button",
+			"piechart123",
+			"click",
+			"$scope.transactionsRollupByType",
+			"transactionsRollupByType",
+			"crossfilter",
+			"/api/transactionsrollup/:type",
+			"\n                    {\n                        \"heading\": \"Root\",\n                        \"type\":\"year\",\n                        \"tiles\": [\n                            {\n                                \"title\": \"2015\",\n                                \"total\": \"??\"\n                            },\n                            {\n                                \"title\": \"2014\",\n                                \"total\": \"??\"\n                            },\n                            {\n                                \"title\": \"2013\",\n                                \"total\": \"??\"\n                            }                            \n                        ]\n                    }\n                ",
 			"transaction",
 			"chart",
 			"left",
@@ -264,61 +265,66 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/app/analysis/mvAnalysisGraphCtrl.js",
+					"file": "public/app/analysis/analyze4.jade",
 					"settings":
 					{
-						"buffer_size": 32837,
+						"buffer_size": 1442,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1442,
+								1442
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10199.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "public/app/analysis/graph1.jade",
+					"file": "public/app/analysis/mvAnalysis4Ctrl.js",
 					"settings":
 					{
-						"buffer_size": 1528,
+						"buffer_size": 13212,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								7068,
+								7068
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3621.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -328,194 +334,20 @@
 					"file": "public/css/site.styl",
 					"settings":
 					{
-						"buffer_size": 3831,
+						"buffer_size": 4054,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								811,
-								829
+								418,
+								402
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/app/analysis/mvAnalysisCtrl.js",
-					"settings":
-					{
-						"buffer_size": 15326,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5620.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "public/app/analysis/analyze3.jade",
-					"settings":
-					{
-						"buffer_size": 2115,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "setup/data/transaction_1431479796922.json",
-					"settings":
-					{
-						"buffer_size": 358845,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								782,
-								785
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"sheets":
-			[
-				{
-					"buffer": 6,
-					"file": "setup/data/queries/mongo-queries.txt",
-					"settings":
-					{
-						"buffer_size": 19255,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								18373,
-								18373
-							]
-						],
-						"settings":
-						{
-							"auto_name": "db.presentations.aggregate(",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 12913.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "server/models/TransactionRollup.js",
-					"settings":
-					{
-						"buffer_size": 519,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								519,
-								519
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "server/models/Transaction.js",
-					"settings":
-					{
-						"buffer_size": 4355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1669,
-								1669
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -576,6 +408,34 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"sit",
+				"public/css/site.styl"
+			],
+			[
+				"site",
+				"public/css/site.styl"
+			],
+			[
+				"style",
+				"node_modules/d3/src/compat/style.js"
+			],
+			[
+				"bow",
+				"bower.json"
+			],
+			[
+				"scr",
+				"server/includes/scripts.jade"
+			],
+			[
+				"",
+				"server/config/routes.js"
+			],
+			[
+				"rou",
+				"server/config/routes.js"
+			]
 		],
 		"width": 0.0
 	},
@@ -591,6 +451,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 442.0,
+	"side_bar_width": 347.0,
 	"status_bar_visible": true
 }
